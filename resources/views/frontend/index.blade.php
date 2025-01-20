@@ -173,7 +173,8 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img src="{{ asset('asset/images/DSC_4100-1-scaled.jpg') }}" alt="Hotel Krinoscco Main"
+                        <img id="main-image" src="{{ asset('asset/images/DSC_4100-1-scaled.jpg') }}"
+                            alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
                         <div
@@ -182,19 +183,22 @@
                         </div>
                     </div>
 
-                    <!-- Image Grid -->
-                    <div class="grid grid-cols-3 gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <!-- Image Gallery -->
+                    <div class="grid grid-cols-3 gap-4 transition-opacity duration-500">
                         <div class="overflow-hidden rounded-xl shadow-lg">
                             <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Hotel Detail 1"
-                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500" />
+                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
+                                onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
                             <img src="{{ asset('asset/images/DSC_4058-scaled.jpg') }}" alt="Hotel Detail 2"
-                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500" />
+                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
+                                onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
                             <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Hotel Detail 3"
-                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500" />
+                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
+                                onclick="changeMainImage(this)" />
                         </div>
                     </div>
                 </div>
@@ -209,11 +213,9 @@
                         </div>
                         <h2 class="text-4xl lg:text-5xl font-bold text-[#1a1a2e] leading-tight">
                             Where Every Moment
-                            <span class="relative">
-                                Resonates
+                            <span class="relative">Resonates
                                 <div class="absolute bottom-0 left-0 w-full h-[8px] bg-[#8B4513]/20"></div>
-                            </span>
-                            Luxury
+                            </span> Luxury
                         </h2>
                     </div>
 
@@ -273,6 +275,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Interactive Room Explorer -->
     <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e] relative overflow-hidden">
@@ -852,10 +855,10 @@
 
                     <!-- Submit Button -->
                     <div class="flex justify-center items-center w-full sm:w-auto">
-                        <button type="submit"
-                            class="bg-[#8B4513] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#8B4513]">
+                        <a href="#"
+                            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white rounded-lg transition-all duration-500 ease-in-out transform hover:from-[#D4A017] hover:to-[#8B4513] hover:scale-105">
                             Check Now
-                        </button>
+                        </a>
                     </div>
                 </form>
             </div>
@@ -1045,7 +1048,7 @@
                 <!-- Testimonial 1 -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
                     <div class="flex items-center mb-6">
-                        <img src="https://via.placeholder.com/60" alt="Guest 1"
+                        <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Guest 1"
                             class="w-16 h-16 rounded-full shadow-md">
                         <div class="ml-4">
                             <h4 class="text-xl font-bold text-white">John Doe</h4>
@@ -1068,7 +1071,7 @@
                 <!-- Testimonial 2 -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
                     <div class="flex items-center mb-6">
-                        <img src="https://via.placeholder.com/60" alt="Guest 2"
+                        <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Guest 2"
                             class="w-16 h-16 rounded-full shadow-md">
                         <div class="ml-4">
                             <h4 class="text-xl font-bold text-white">Emma Brown</h4>
@@ -1091,7 +1094,7 @@
                 <!-- Testimonial 3 -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
                     <div class="flex items-center mb-6">
-                        <img src="https://via.placeholder.com/60" alt="Guest 3"
+                        <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Guest 3"
                             class="w-16 h-16 rounded-full shadow-md">
                         <div class="ml-4">
                             <h4 class="text-xl font-bold text-white">Liam Johnson</h4>
@@ -1298,6 +1301,14 @@
             </div>
         </div>
     </section>
+
+    <!--About Us JavaScript for Image Change -->
+    <script>
+        function changeMainImage(element) {
+            const mainImage = document.getElementById("main-image");
+            mainImage.src = element.src;
+        }
+    </script>
 
     <!-- Add the script to toggle the FAQ answers and rotate the icons -->
     <script>
