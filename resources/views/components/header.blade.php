@@ -138,10 +138,11 @@
                 <!-- Desktop Navigation remains the same but will use the enhanced nav-item styles -->
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center space-x-6">
-                    <a href="#home" class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
+                    <a href="/" class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
                         Home
                     </a>
-                    <a href="#about" class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
+                    <a href="{{ route('about') }}"
+                        class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
                         About
                     </a>
 
@@ -158,15 +159,15 @@
                         <div
                             class="dropdown-menu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-[#0D0630] ring-1 ring-black ring-opacity-5 z-50">
                             <div class="py-1">
-                                <a href="#accommodation1"
-                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Option
-                                    1</a>
-                                <a href="#accommodation2"
-                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Option
-                                    2</a>
-                                <a href="#accommodation3"
-                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Option
-                                    3</a>
+                                <a href="{{ route('accommodation.standard') }}"
+                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Standard
+                                    Room​</a>
+                                <a href="{{ route('accommodation.deluxe') }}"
+                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Deluxe
+                                    Room</a>
+                                <a href="{{ route('accommodation.luxury') }}"
+                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Luxury
+                                    Suite</a>
                             </div>
                         </div>
                     </div>
@@ -184,26 +185,30 @@
                         <div
                             class="dropdown-menu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-[#0D0630] ring-1 ring-black ring-opacity-5 z-50">
                             <div class="py-1">
-                                <a href="#banquet1"
-                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Option
-                                    1</a>
-                                <a href="#banquet2"
-                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Option
-                                    2</a>
+                                <a href="{{ route('banquets.lawn') }}"
+                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Lawn
+                                    Package</a>
+                                <a href="{{ route('banquets.ballroom') }}"
+                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Ballroom
+                                    Package​</a>
                             </div>
                         </div>
                     </div>
 
-                    <a href="#rules" class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
+                    <a href="{{ route('rules-and-regulations') }}"
+                        class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
                         Rules & Regulations
                     </a>
-                    <a href="#careers" class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
+                    <a href="{{ route('careers') }}"
+                        class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
                         Careers
                     </a>
-                    <a href="#gallery" class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
+                    <a href="{{ route('gallery') }}"
+                        class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
                         Gallery
                     </a>
-                    <a href="#contact" class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
+                    <a href="{{ route('contact-us') }}"
+                        class="nav-item text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">
                         Contact Us
                     </a>
                 </nav>
