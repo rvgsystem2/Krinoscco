@@ -125,7 +125,6 @@
                             </div>
                         </div>
 
-
                         <!-- CTA Section -->
                         <div class="flex items-center gap-6 pt-4">
                             <a href="#"
@@ -145,33 +144,48 @@
                     </div>
                 </div>
             </div>
-               <!-- Room Features -->
-    <div class="space-y-4">
-        <h1>The standard room has all the essential conveniences and is tastefully designed for your enjoyable stay. We are
-            delivering the highest level of pleasure and a wonderful experience.</h1>
-        <h3 class="text-2xl font-semibold text-[#1a1a2e]">Room Features</h3>
-        <ul class="list-disc pl-5 space-y-2 text-lg text-gray-700">
-            <li>Keycard access to all the rooms</li>
-            <li>King or Double bedded rooms</li>
-            <li>Sofa chairs in all rooms</li>
-            <li>High speed Wireless Internet access</li>
-            <li>Telephone with intercoms, speakerphone, voicemail & wake-up call facilities</li>
-            <li>Coffee maker with complimentary coffee, tea & milk sachets</li>
-            <li>Bottled Water</li>
-            <li>Mini Bar</li>
-            <li>Wall safe</li>
-            <li>Slippers available (on request)</li>
-            <li>Bath amenities and toiletry items</li>
-            <li>Hair Dryer (on request)</li>
-            <li>Iron and Board (on request)</li>
-            <li>32 inch flat screen television</li>
-            <li>English, Hindi and other regional language channels</li>
-        </ul>
-    </div>
+
+            <!-- Room Features -->
+            <div class="space-y-6 py-12">
+                <h1 class="text-3xl text-gray-800">The standard room has all the essential conveniences and is tastefully designed for your enjoyable stay. We are delivering the highest level of pleasure and a wonderful experience.</h1>
+                <h3 class="text-2xl font-semibold text-[#1a1a2e]">Room Features</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 bg-[#8B4513] rounded-full"></div>
+                        <p class="text-lg text-gray-700">Keycard access to all the rooms</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 bg-[#8B4513] rounded-full"></div>
+                        <p class="text-lg text-gray-700">King or Double bedded rooms</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 bg-[#8B4513] rounded-full"></div>
+                        <p class="text-lg text-gray-700">Sofa chairs in all rooms</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 bg-[#8B4513] rounded-full"></div>
+                        <p class="text-lg text-gray-700">High speed Wireless Internet access</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 bg-[#8B4513] rounded-full"></div>
+                        <p class="text-lg text-gray-700">Telephone with intercoms, speakerphone, voicemail & wake-up call facilities</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 bg-[#8B4513] rounded-full"></div>
+                        <p class="text-lg text-gray-700">Coffee maker with complimentary coffee, tea & milk sachets</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 bg-[#8B4513] rounded-full"></div>
+                        <p class="text-lg text-gray-700">Bottled Water</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-5 h-5 bg-[#8B4513] rounded-full"></div>
+                        <p class="text-lg text-gray-700">Mini Bar</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
-
 
     <!-- JavaScript for Image Change -->
     <script>
