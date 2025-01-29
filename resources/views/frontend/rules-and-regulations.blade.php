@@ -1,15 +1,16 @@
 @extends('components.main')
 
 @section('content')
-    <!-- Hero Section -->
-    <div class="relative bg-gradient-to-b from-[#2c3e50] to-[#8B4513] text-white py-20 px-6 sm:px-12 md:px-16 lg:px-24">
-        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+     <!-- Hero Section -->
+     <div class="relative bg-gradient-to-b from-[#2c3e50] to-[#8B4513] text-white py-20 px-4">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="absolute inset-0 bg-white bg-opacity-20 backdrop-blur-md z-0"></div>
         <div class="relative container mx-auto text-center z-10">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight mb-6 text-[#ecf0f1] drop-shadow-xl transform transition duration-500 ease-in-out hover:scale-105">
+            <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">
                 Rules & Regulations
             </h1>
-            <div class="w-32 sm:w-40 md:w-48 h-1 bg-gradient-to-r from-[#e67e22] to-[#f39c12] mx-auto rounded-full"></div>
+            <div class="w-32 h-1 bg-gradient-to-r from-[#e67e22] to-[#f39c12] mx-auto rounded-full"></div>
         </div>
     </div>
 

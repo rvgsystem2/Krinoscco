@@ -233,9 +233,9 @@
         <div class="hidden lg:hidden absolute top-full left-0 w-full bg-[#0D0630] border-t border-purple-500/30 glass-effect"
             id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home"
+                <a href="/"
                     class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Home</a>
-                <a href="#about"
+                <a href="{{ route('about') }}"
                     class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">About</a>
 
                 <!-- Mobile Accommodation submenu -->
@@ -250,14 +250,13 @@
                     </button>
                     <div id="accommodation-submenu" class="hidden pl-4">
                         <a href="#accommodation1"
-                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Option
-                            1</a>
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Standard
+                            Room</a>
                         <a href="#accommodation2"
-                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Option
-                            2</a>
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Deluxe Room</a>
                         <a href="#accommodation3"
-                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Option
-                            3</a>
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Luxu
+                            ry Suite</a>
                     </div>
                 </div>
 

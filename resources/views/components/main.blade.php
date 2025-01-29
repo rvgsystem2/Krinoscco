@@ -40,7 +40,7 @@
     @include('components.header')
 
     <!-- Main content section -->
-    <main class="">
+    <main>
         @yield('content')
     </main>
 
@@ -52,7 +52,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- AOS JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
-    
+
     <script>
         // Initialize AOS
         AOS.init();
