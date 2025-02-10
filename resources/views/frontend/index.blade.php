@@ -889,7 +889,7 @@
                     <p class="text-gray-300 mb-6">The standard room has all the essential conveniences and is tastefully
                         designed for your enjoyable stay. We are delivering the highest level of pleasure and a wonderful
                         experience.</p>
-                    <a href="#"
+                    <a href="{{route('accommodation.standard')}}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -904,7 +904,7 @@
                     <h3 class="text-2xl font-bold text-white mb-4">Deluxe Room</h3>
                     <p class="text-gray-300 mb-6">Envision opulence in our Deluxe haven—where lavish comforts meet bespoke
                         elegance, weaving a tapestry of indulgence for an unforgettable retreat.</p>
-                    <a href="#"
+                    <a href="{{route('accommodation.deluxe')}}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -920,7 +920,7 @@
                         Suite</h3>
                     <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our  Suite—a symphony of
                         sophistication, where indulgence meets exclusivity for an unparalleled escape.</p>
-                    <a href="#"
+                    <a href="{{route('accommodation.luxury')}}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -950,7 +950,7 @@
                     <h3 class="text-2xl font-bold text-white mb-4">Lawn Package</h3>
                     <p class="text-gray-300 mb-6">Envision opulence in our Deluxe haven—where lavish comforts meet bespoke
                         elegance, weaving a tapestry of indulgence for an unforgettable retreat.</p>
-                    <a href="#"
+                    <a href="{{route('banquets.lawn')}}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -959,13 +959,13 @@
                 <!-- Ballroom Package -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/suite1.jpg') }}" alt="Ballroom Package"
+                        <img src="{{ asset('asset/images/d11.jpg') }}" alt="Ballroom Package"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Ballroom Package</h3>
                     <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our  Suite—a symphony of
                         sophistication, where indulgence meets exclusivity for an unparalleled escape.</p>
-                    <a href="#"
+                    <a href="{{route('banquets.ballroom')}}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
