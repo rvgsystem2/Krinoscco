@@ -916,8 +916,9 @@
                         <img src="{{ asset('asset/images/d11.jpg') }}" alt="Luxury Suite"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Luxury Suite</h3>
-                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our Luxury Suite—a symphony of
+                    <h3 class="text-2xl font-bold text-white mb-4">
+                        Suite</h3>
+                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our  Suite—a symphony of
                         sophistication, where indulgence meets exclusivity for an unparalleled escape.</p>
                     <a href="#"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
@@ -962,7 +963,7 @@
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Ballroom Package</h3>
-                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our Luxury Suite—a symphony of
+                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our  Suite—a symphony of
                         sophistication, where indulgence meets exclusivity for an unparalleled escape.</p>
                     <a href="#"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
