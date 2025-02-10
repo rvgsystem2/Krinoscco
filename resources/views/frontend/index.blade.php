@@ -173,7 +173,7 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/DSC_4100-1-scaled.jpg') }}"
+                        <img id="main-image" src="{{ asset('asset/images/s1.jpg') }}"
                             alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
@@ -186,17 +186,17 @@
                     <!-- Image Gallery -->
                     <div class="grid grid-cols-3 gap-4 transition-opacity duration-500">
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Hotel Detail 1"
+                            <img src="{{ asset('asset/images/s2.jpg') }}" alt="Hotel Detail 1"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC_4058-scaled.jpg') }}" alt="Hotel Detail 2"
+                            <img src="{{ asset('asset/images/s3.jpg') }}" alt="Hotel Detail 2"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Hotel Detail 3"
+                            <img src="{{ asset('asset/images/s4.jpg') }}" alt="Hotel Detail 3"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
@@ -298,7 +298,7 @@
                 <div class="space-y-8">
                     <div class="bg-[#16213e] rounded-2xl h-[500px] relative overflow-hidden shadow-2xl group">
                         <!-- 3D View Container -->
-                        <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="3D Room View"
+                        <img src="{{ asset('asset/images/s2.jpg') }}" alt="3D Room View"
                             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
 
                         <!-- Interactive Controls -->
@@ -593,7 +593,7 @@
                 <!-- VR Spa Experience Card -->
                 <div
                     class="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
-                    <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="VR Spa Experience"
+                    <img src="{{ asset('asset/images/s7.jpg') }}" alt="VR Spa Experience"
                         class="w-full h-[400px] object-cover transition-transform duration-1000 ease-in-out hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
                         <div class="p-8 h-full flex flex-col justify-end">
@@ -614,7 +614,7 @@
                 <!-- Smart Room Experience Card -->
                 <div
                     class="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
-                    <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Smart Room Experience"
+                    <img src="{{ asset('asset/images/s8.jpg') }}" alt="Smart Room Experience"
                         class="w-full h-[400px] object-cover transition-transform duration-1000 ease-in-out hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
                         <div class="p-8 h-full flex flex-col justify-end">
@@ -635,7 +635,7 @@
                 <!-- Culinary Journey Card -->
                 <div
                     class="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-700 ease-in-out hover:translate-y-[-10px] hover:shadow-2xl">
-                    <img src="{{ asset('asset/images/DSC_4100-1-scaled.jpg') }}" alt="Culinary Experience"
+                    <img src="{{ asset('asset/images/s9.jpg') }}" alt="Culinary Experience"
                         class="w-full h-[400px] object-cover transition-transform duration-1000 ease-in-out hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
                         <div class="p-8 h-full flex flex-col justify-end">
@@ -882,7 +882,7 @@
                 <!-- Standard Room -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Standard Room"
+                        <img src="{{ asset('asset/images/d2.jpg') }}" alt="Standard Room"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Standard Room</h3>
@@ -898,7 +898,7 @@
                 <!-- Deluxe Room -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Deluxe Room"
+                        <img src="{{ asset('asset/images/d4.jpg') }}" alt="Deluxe Room"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Deluxe Room</h3>
@@ -913,7 +913,7 @@
                 <!-- Luxury Suite -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Luxury Suite"
+                        <img src="{{ asset('asset/images/d11.jpg') }}" alt="Luxury Suite"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Luxury Suite</h3>
@@ -943,7 +943,7 @@
                 <!-- Lawn Package -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Lawn Package"
+                        <img src="{{ asset('asset/images/d11.jpg') }}" alt="Lawn Package"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Lawn Package</h3>
@@ -958,7 +958,7 @@
                 <!-- Ballroom Package -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Ballroom Package"
+                        <img src="{{ asset('asset/images/suite1.jpg') }}" alt="Ballroom Package"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Ballroom Package</h3>
@@ -986,7 +986,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Gallery Item 1 -->
                 <div class="relative group">
-                    <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Art Piece 1"
+                    <img src="{{ asset('asset/images/suite11.jpg') }}" alt="Art Piece 1"
                         class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
                     <div
                         class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
@@ -996,7 +996,7 @@
 
                 <!-- Gallery Item 2 -->
                 <div class="relative group">
-                    <img src="{{ asset('asset/images/DSC_4032-1-1-scaled.jpg') }}" alt="Art Piece 2"
+                    <img src="{{ asset('asset/images/suite13.jpg') }}" alt="Art Piece 2"
                         class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
                     <div
                         class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
@@ -1006,7 +1006,7 @@
 
                 <!-- Gallery Item 3 -->
                 <div class="relative group">
-                    <img src="{{ asset('asset/images/DSC_4032-1-1-scaled.jpg') }}" alt="Art Piece 3"
+                    <img src="{{ asset('asset/images/suite11.jpg') }}" alt="Art Piece 3"
                         class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
                     <div
                         class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
@@ -1016,7 +1016,7 @@
 
                 <!-- Gallery Item 4 -->
                 <div class="relative group">
-                    <img src="{{ asset('asset/images/DSC_4100-1-scaled.jpg') }}" alt="Art Piece 4"
+                    <img src="{{ asset('asset/images/suite10.jpg') }}" alt="Art Piece 4"
                         class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
                     <div
                         class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
@@ -1047,7 +1047,7 @@
                     <!-- Testimonial 1 -->
                     <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
                         <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Guest 1"
+                            <img src="{{ asset('asset/images/suite6.jpg') }}" alt="Guest 1"
                                 class="w-16 h-16 rounded-full shadow-md">
                             <div class="ml-4">
                                 <h4 class="text-xl font-bold text-white">John Doe</h4>
@@ -1070,7 +1070,7 @@
                     <!-- Testimonial 2 -->
                     <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
                         <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Guest 2"
+                            <img src="{{ asset('asset/images/suite7.jpg') }}" alt="Guest 2"
                                 class="w-16 h-16 rounded-full shadow-md">
                             <div class="ml-4">
                                 <h4 class="text-xl font-bold text-white">Emma Brown</h4>
@@ -1093,7 +1093,7 @@
                     <!-- Testimonial 3 -->
                     <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
                         <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Guest 3"
+                            <img src="{{ asset('asset/images/suite6.jpg') }}" alt="Guest 3"
                                 class="w-16 h-16 rounded-full shadow-md">
                             <div class="ml-4">
                                 <h4 class="text-xl font-bold text-white">Emma Brown</h4>
@@ -1116,7 +1116,7 @@
                     <!-- Testimonial 4 -->
                     <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
                         <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Guest 4"
+                            <img src="{{ asset('asset/images/suite7.jpg') }}" alt="Guest 4"
                                 class="w-16 h-16 rounded-full shadow-md">
                             <div class="ml-4">
                                 <h4 class="text-xl font-bold text-white">Emma Brown</h4>
@@ -1139,7 +1139,7 @@
                     <!-- Testimonial 5 -->
                     <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
                         <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Guest 5"
+                            <img src="{{ asset('asset/images/d11.jpg') }}" alt="Guest 5"
                                 class="w-16 h-16 rounded-full shadow-md">
                             <div class="ml-4">
                                 <h4 class="text-xl font-bold text-white">Emma Brown</h4>
