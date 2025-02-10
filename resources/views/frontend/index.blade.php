@@ -118,7 +118,7 @@
         </video>
 
         <!-- Enhanced glass effect overlay -->
-        <div class="absolute inset-0 bg-black/40 backdrop-blur-[4px] backdrop-saturate-150"></div>
+        <div class="absolute inset-0 "></div>
 
         <!-- Main Content Container -->
         <div class="relative container mx-auto px-6 md:px-12 h-full flex flex-col justify-center">
