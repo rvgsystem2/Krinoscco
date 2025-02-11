@@ -29,6 +29,7 @@
 
     <!-- Preloader -->
     <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
+
         <div class="relative flex items-center justify-center">
             <!-- Rotating Container -->
             <div
@@ -37,6 +38,28 @@
             </div>
         </div>
     </div>
+
+        <!-- Rotating Loader with Logo -->
+        <div class="relative flex items-center justify-center">
+            <div class="animate-spin rounded-full h-24 w-24 ">
+                <img src="{{ asset('asset/images/logo.png') }}" alt="Logo" class="h-16 w-16 object-contain mx-auto">
+            </div>
+        </div>
+    </div>
+
+    <!-- Hide Preloader After Page Load -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+            }, 1000); // Adjust delay as needed
+        });
+    </script>
+
+
+
+
+
 
     <!-- Tailwind CSS -->
     @vite('resources/css/app.css')
@@ -66,6 +89,7 @@
         // Initialize AOS
         AOS.init();
     </script>
+
     <script>
         window.addEventListener("load", function() {
             const preloader = document.getElementById("preloader");
@@ -77,6 +101,7 @@
             }
         });
     </script>
+
 </body>
 
 </html>
