@@ -27,23 +27,20 @@
     <!-- AOS CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-   <!-- Preloader -->
-   <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
-    <div class="relative flex items-center justify-center">
-        <!-- Rotating Container -->
-        <div
-            class="animate-spin rounded-full h-24 w-24 border-t-4 border-b-4 border-transparent flex items-center justify-center">
-            <img src="{{ asset('asset/images/logo.png') }}" alt="Logo" class="h-auto w-auto">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
+        <div class="relative flex items-center justify-center">
+            <!-- Rotating Container -->
+            <div
+                class="animate-spin rounded-full h-24 w-24 border-t-4 border-b-4 border-transparent flex items-center justify-center">
+                <img src="{{ asset('asset/images/logo.png') }}" alt="Logo" class="h-auto w-auto">
+            </div>
         </div>
     </div>
-</div>
-
-
-
-
 
     <!-- Tailwind CSS -->
     @vite('resources/css/app.css')
+
 </head>
 
 <body class="bg-gray-50">
@@ -70,7 +67,7 @@
         AOS.init();
     </script>
     <script>
-        window.addEventListener("load", function () {
+        window.addEventListener("load", function() {
             const preloader = document.getElementById("preloader");
             if (preloader) {
                 preloader.style.opacity = "0";
