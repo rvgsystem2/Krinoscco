@@ -38,3 +38,12 @@ Route::get('/accommodation/luxury-suite', [HomeController::class, 'luxurySuite']
 // Banquets and Meetings Routes
 Route::get('/banquets/lawn-package', [HomeController::class, 'lawnPackage'])->name('banquets.lawn');
 Route::get('/banquets/ballroom-package', [HomeController::class, 'ballroomPackage'])->name('banquets.ballroom');
+
+// footerpages
+Route::get('/termandcondition', [HomeController::class, 'termandcondition'])->name('termandcondition');
+Route::get('/conditions', [HomeController::class, 'conditions'])->name('conditons');
+Route::get('/liability', [HomeController::class, 'liability'])->name('liability');
+Route::get('/miscelleneous', [HomeController::class, 'miscelleneous'])->name('miscelleneous');
+Route::get('/details', [HomeController::class, 'details'])->name('details');
+Route::get('/information', [HomeController::class, 'information'])->name('information');
+Route::get('/policy', [HomeController::class, 'policy'])->name('policy');
