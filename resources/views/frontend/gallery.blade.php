@@ -28,7 +28,7 @@
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}"
+                    <img src="{{ asset('asset/images/d8.jpg') }}"
                          alt="Abstract Harmony"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/DSC_4032-1-1-scaled.jpg') }}"
+                    <img src="{{ asset('asset/images/d0.jpg') }}"
                          alt="Digital Dreams"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/DSC_4100-1-scaled.jpg') }}"
+                    <img src="{{ asset('asset/images/s11.jpg') }}"
                          alt="Neon Nights"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork4.jpg') }}"
+                    <img src="{{ asset('asset/images/suite13.jpg') }}"
                          alt="Cyber Sunset"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork5.jpg') }}"
+                    <img src="{{ asset('asset/images/s3.jpg') }}"
                          alt="Virtual Reality"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork6.jpg') }}"
+                    <img src="{{ asset('asset/images/s8.jpg') }}"
                          alt="Digital Landscape"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork7.jpg') }}"
+                    <img src="{{ asset('asset/images/suite8.jpg') }}"
                          alt="Pixel Perfect"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork8.jpg') }}"
+                    <img src="{{ asset('asset/images/d8.jpg') }}"
                          alt="Future Vision"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork9.jpg') }}"
+                    <img src="{{ asset('asset/images/s1.jpg') }}"
                          alt="Tech Art"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork10.jpg') }}"
+                    <img src="{{ asset('asset/images/d1.jpg') }}"
                          alt="Digital Evolution"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork11.jpg') }}"
+                    <img src="{{ asset('asset/images/suite1.jpg') }}"
                          alt="Modern Masterpiece"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/artwork12.jpg') }}"
+                    <img src="{{ asset('asset/images/suite12.jpg') }}"
                          alt="Digital Expression"
                          class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
                     <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>

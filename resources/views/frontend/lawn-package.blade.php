@@ -33,7 +33,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Package 1 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Package 1"
+                <img src="{{ asset('asset/images/s3.jpg') }}" alt="Package 1"
                     class="w-full h-56 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Basic Package</h3>
@@ -44,7 +44,7 @@
 
             <!-- Package 2 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Package 2" class="w-full h-56 object-cover">
+                <img src="{{ asset('asset/images/s5.jpg') }}" alt="Package 2" class="w-full h-56 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Premium Package</h3>
                     <p class="text-gray-600">Includes everything in the basic package plus fertilization and irrigation.</p>
@@ -54,7 +54,7 @@
 
             <!-- Package 3 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="{{ asset('asset/images/DSC_4032-1-1-scaled.jpg') }}" alt="Package 3"
+                <img src="{{ asset('asset/images/suite13.jpg') }}" alt="Package 3"
                     class="w-full h-56 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Luxury Package</h3>
