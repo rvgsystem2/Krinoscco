@@ -7,6 +7,7 @@
         position: relative;
         z-index: 20;
         border-bottom: 4px solid burlywood;
+        overflow: hidden;
         /* Added brown border to the bottom */
     }
 
