@@ -869,7 +869,7 @@
     <!-- Our Accommodation Section -->
     <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e]">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-5xl font-bold text-white mb-12">
+            <h2 class="text-base md:text-5xl font-bold text-white mb-12">
                 Our Accommodation
                 <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
             </h2>
@@ -1275,12 +1275,12 @@
 
 
     <!-- Contact Us -->
-    <section class="bg-gray-100 py-16 relative">
+    <section class="bg-gray-100 py-16 relative overflow-hidden">
         <!-- Decorative Elements -->
         <div class="absolute top-0 left-0 w-96 h-96 bg-[#D4A017]/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-3xl"></div>
 
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+        <div class="max-w-7xl mx-auto md:px-6 sm:px-8 lg:px-12 relative z-10">
             <!-- Heading Section -->
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-extrabold text-gray-900">Contact Us</h2>
