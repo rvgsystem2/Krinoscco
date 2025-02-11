@@ -1374,7 +1374,7 @@
             <div class="mt-16">
                 <iframe
                     class="w-full h-80 rounded-lg shadow-lg transition-transform duration-700 hover:shadow-2xl hover:scale-105"
-                    src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK" frameborder="0" allowfullscreen=""></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.786563827908!2d82.162745675435!3d26.78307267672456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0796e56fb899%3A0xffa1558e88f0d349!2sHotel%20Krinoscco!5e0!3m2!1sen!2sin!4v1739181698814!5m2!1sen!2sin" frameborder="0" allowfullscreen=""></iframe>
             </div>
         </div>
     </section>
