@@ -10,7 +10,6 @@
         /* Added brown border to the bottom */
     }
 
-
     .nav-item {
         position: relative;
         perspective: 1000px;
