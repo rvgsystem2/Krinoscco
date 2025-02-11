@@ -987,7 +987,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Gallery Item 1 -->
                 <div class="relative group">
-                    <img src="{{ asset('asset/images/suite11.jpg') }}" alt="Art Piece 1"
+                    <img src="{{ asset('asset/images/suite2.jpg') }}" alt="Art Piece 1"
                         class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
                     <div
                         class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
