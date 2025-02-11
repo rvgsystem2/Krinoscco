@@ -67,7 +67,7 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/DSC_4100-1-scaled.jpg') }}"
+                        <img id="main-image" src="{{ asset('asset/images/d1.jpg') }}"
                             alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
@@ -80,17 +80,17 @@
                     <!-- Image Gallery -->
                     <div class="grid grid-cols-3 gap-4 transition-opacity duration-500">
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Hotel Detail 1"
+                            <img src="{{ asset('asset/images/d2.jpg') }}" alt="Hotel Detail 1"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC_4058-scaled.jpg') }}" alt="Hotel Detail 2"
+                            <img src="{{ asset('asset/images/d3.jpg') }}" alt="Hotel Detail 2"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Hotel Detail 3"
+                            <img src="{{ asset('asset/images/d4.jpg') }}" alt="Hotel Detail 3"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>

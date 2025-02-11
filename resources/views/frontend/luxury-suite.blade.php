@@ -36,7 +36,7 @@
         <div class="relative container mx-auto text-center z-10">
             <!-- Title with Enhanced Focus -->
             <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">
-                Luxury Suite
+             Suite
             </h1>
 
             <!-- Description Text with Focus -->
@@ -67,7 +67,7 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/DSC_4100-1-scaled.jpg') }}"
+                        <img id="main-image" src="{{ asset('asset/images/suite1.jpg') }}"
                             alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
@@ -80,17 +80,17 @@
                     <!-- Image Gallery -->
                     <div class="grid grid-cols-3 gap-4 transition-opacity duration-500">
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC02909-scaled.jpg') }}" alt="Hotel Detail 1"
+                            <img src="{{ asset('asset/images/suite2.jpg') }}" alt="Hotel Detail 1"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC_4058-scaled.jpg') }}" alt="Hotel Detail 2"
+                            <img src="{{ asset('asset/images/suite3.jpg') }}" alt="Hotel Detail 2"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Hotel Detail 3"
+                            <img src="{{ asset('asset/images/suite4.jpg') }}" alt="Hotel Detail 3"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
@@ -103,21 +103,21 @@
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
                             <div class="w-20 h-[2px] bg-[#8B4513]"></div>
-                            <span class="text-[#8B4513] font-semibold uppercase tracking-wider">Luxury Suite</span>
+                            <span class="text-[#8B4513] font-semibold uppercase tracking-wider"> Suite</span>
                         </div>
                         <h2 class="text-4xl lg:text-5xl font-bold text-[#1a1a2e] leading-tight">
                             Where Every Moment
                             <span class="relative">Resonates
                                 <div class="absolute bottom-0 left-0 w-full h-[8px] bg-[#8B4513]/20"></div>
-                            </span> Luxury
+                            </span> 
                         </h2>
                     </div>
 
                     <!-- Content -->
                     <div class="space-y-6">
                         <p class="text-lg text-gray-700 leading-relaxed">
-                            The Luxury Suite has all the essential conveniences and is tastefully designed for your
-                            enjoyable stay. Hotel Krinoscco redefines luxury with an unwavering commitment to international
+                            The Suite has all the essential conveniences and is tastefully designed for your
+                            enjoyable stay. Hotel Krinoscco redefines suite with an unwavering commitment to international
                             standards of service and style.
                         </p>
                         <p class="text-lg text-gray-700 leading-relaxed">
@@ -168,7 +168,7 @@
 
             <!-- Room Features -->
             <div class="space-y-6 py-12">
-                <h1 class="text-3xl text-gray-800">The Luxury suit room has all the essential conveniences and is tastefully
+                <h1 class="text-3xl text-gray-800">The  suit room has all the essential conveniences and is tastefully
                     designed for your enjoyable stay. We are delivering the highest level of pleasure and a wonderful
                     experience.</h1>
                 <h3 class="text-2xl font-semibold text-[#1a1a2e]">Room Features</h3>

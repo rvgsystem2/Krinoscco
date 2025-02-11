@@ -165,7 +165,7 @@
                                     class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Deluxe
                                     Room</a>
                                 <a href="{{ route('accommodation.luxury') }}"
-                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Luxury
+                                    class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">
                                     Suite</a>
                             </div>
                         </div>
