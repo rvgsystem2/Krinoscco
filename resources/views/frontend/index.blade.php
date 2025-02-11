@@ -173,8 +173,7 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/s1.jpg') }}"
-                            alt="Hotel Krinoscco Main"
+                        <img id="main-image" src="{{ asset('asset/images/s1.jpg') }}" alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
                         <div
@@ -889,7 +888,7 @@
                     <p class="text-gray-300 mb-6">The standard room has all the essential conveniences and is tastefully
                         designed for your enjoyable stay. We are delivering the highest level of pleasure and a wonderful
                         experience.</p>
-                    <a href="{{route('accommodation.standard')}}"
+                    <a href="{{ route('accommodation.standard') }}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -904,7 +903,7 @@
                     <h3 class="text-2xl font-bold text-white mb-4">Deluxe Room</h3>
                     <p class="text-gray-300 mb-6">Envision opulence in our Deluxe haven—where lavish comforts meet bespoke
                         elegance, weaving a tapestry of indulgence for an unforgettable retreat.</p>
-                    <a href="{{route('accommodation.deluxe')}}"
+                    <a href="{{ route('accommodation.deluxe') }}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -918,9 +917,9 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">
                         Suite</h3>
-                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our  Suite—a symphony of
+                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our Suite—a symphony of
                         sophistication, where indulgence meets exclusivity for an unparalleled escape.</p>
-                    <a href="{{route('accommodation.luxury')}}"
+                    <a href="{{ route('accommodation.luxury') }}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -950,7 +949,7 @@
                     <h3 class="text-2xl font-bold text-white mb-4">Lawn Package</h3>
                     <p class="text-gray-300 mb-6">Envision opulence in our Deluxe haven—where lavish comforts meet bespoke
                         elegance, weaving a tapestry of indulgence for an unforgettable retreat.</p>
-                    <a href="{{route('banquets.lawn')}}"
+                    <a href="{{ route('banquets.lawn') }}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -963,9 +962,9 @@
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Ballroom Package</h3>
-                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our  Suite—a symphony of
+                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our Suite—a symphony of
                         sophistication, where indulgence meets exclusivity for an unparalleled escape.</p>
-                    <a href="{{route('banquets.ballroom')}}"
+                    <a href="{{ route('banquets.ballroom') }}"
                         class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
@@ -1374,7 +1373,8 @@
             <div class="mt-16">
                 <iframe
                     class="w-full h-80 rounded-lg shadow-lg transition-transform duration-700 hover:shadow-2xl hover:scale-105"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.786563827908!2d82.162745675435!3d26.78307267672456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0796e56fb899%3A0xffa1558e88f0d349!2sHotel%20Krinoscco!5e0!3m2!1sen!2sin!4v1739181698814!5m2!1sen!2sin" frameborder="0" allowfullscreen=""></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.786563827908!2d82.162745675435!3d26.78307267672456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0796e56fb899%3A0xffa1558e88f0d349!2sHotel%20Krinoscco!5e0!3m2!1sen!2sin!4v1739181698814!5m2!1sen!2sin"
+                    frameborder="0" allowfullscreen=""></iframe>
             </div>
         </div>
     </section>
