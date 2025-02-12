@@ -98,7 +98,7 @@
                 </div>
 
                 <div>
-                    <img src="{{ asset('asset/images/suite12.jpg') }}" alt="Modern Masterpiece"
+                    <img src="{{ asset('asset/images/s1.jpg') }}" alt="Modern Masterpiece"
                          class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
                          onclick="openModal('{{ asset('asset/images/s1.jpg') }}')">
                     <div class="text-center text-lg font-semibold mt-2">Modern Masterpiece</div>
