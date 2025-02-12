@@ -67,7 +67,7 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/suite1.jpg') }}"
+                        <img id="main-image" src="{{ asset('asset/images/s1.jpg') }}"
                             alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
@@ -80,7 +80,7 @@
                     <!-- Image Gallery -->
                     <div class="grid grid-cols-3 gap-4 transition-opacity duration-500">
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/suite2.jpg') }}" alt="Hotel Detail 1"
+                            <img src="{{ asset('asset/images/s2.jpg') }}" alt="Hotel Detail 1"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
@@ -90,7 +90,7 @@
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/suite4.jpg') }}" alt="Hotel Detail 3"
+                            <img src="{{ asset('asset/images/s3.jpg') }}" alt="Hotel Detail 3"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
