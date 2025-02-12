@@ -255,14 +255,14 @@
 
                         <!-- CTA Section -->
                         <div class="flex items-center gap-6 pt-4">
-                            <a href="#"
+                            <a href="{{route('gallery')}}"
                                 class="group relative px-8 py-4 bg-[#8B4513] text-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                                 <div
                                     class="absolute inset-0 bg-[#6B3410] transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
                                 </div>
                                 <span class="relative z-10 font-semibold">Discover More</span>
                             </a>
-                            <a href="#"
+                            <a href="{{route('gallery')}}"
                                 class="group flex items-center gap-3 text-[#1a1a2e] font-semibold hover:text-[#8B4513] transition-colors duration-300">
                                 <span>View Gallery</span>
                                 <i
@@ -400,10 +400,16 @@
                         </div>
 
                         <!-- CTA Button -->
-                        <button
-                            class="w-full mt-8 bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white py-4 rounded-lg font-semibold hover:from-[#D4A017] hover:to-[#8B4513] transition-all duration-300 transform hover:scale-[1.02]">
+                        <!-- CTA Button as <a> -->
+                        <a href="#booking"
+                            class="w-full mt-8 py-4 text-white text-center font-semibold rounded-lg
+       bg-gradient-to-r from-[#8B4513] to-[#D4A017]
+       hover:from-[#D4A017] hover:to-[#8B4513]
+       transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-[#D4A017]/50
+       block">
                             Book This Room
-                        </button>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -679,7 +685,7 @@
 
             <!-- CTA Section -->
             <div class="mt-20 text-center">
-                <a href="#"
+                <a href="#booking"
                     class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white rounded-lg transition-all duration-500 ease-in-out transform hover:from-[#D4A017] hover:to-[#8B4513] hover:scale-105">
                     Book Your Experience
                     <i class="fas fa-arrow-right ml-2"></i>

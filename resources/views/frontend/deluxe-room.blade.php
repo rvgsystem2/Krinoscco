@@ -23,7 +23,7 @@
             }
         }
     </style>
-    
+
     <!-- Hero Section -->
     <div class="relative bg-gradient-to-b from-[#2c3e50] to-[#8B4513] text-white py-20 px-4">
         <!-- Overlay Background (Optional) -->
@@ -148,14 +148,14 @@
 
                         <!-- CTA Section -->
                         <div class="flex items-center gap-6 pt-4">
-                            <a href="#"
+                            <a href="{{route('gallery')}}"
                                 class="group relative px-8 py-4 bg-[#8B4513] text-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                                 <div
                                     class="absolute inset-0 bg-[#6B3410] transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
                                 </div>
                                 <span class="relative z-10 font-semibold">Discover More</span>
                             </a>
-                            <a href="#"
+                            <a href="{{route('gallery')}}"
                                 class="group flex items-center gap-3 text-[#1a1a2e] font-semibold hover:text-[#8B4513] transition-colors duration-300">
                                 <span>View Gallery</span>
                                 <i
