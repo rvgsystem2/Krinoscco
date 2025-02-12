@@ -27,147 +27,108 @@
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/d8.jpg') }}"
-                         alt="Abstract Harmony"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Abstract Harmony</div>
+                <div>
+                    <img src="{{ asset('asset/images/d8.jpg') }}" alt="Abstract Harmony"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/d8.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Abstract Harmony</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/d0.jpg') }}"
-                         alt="Digital Dreams"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Digital Dreams</div>
+                <div>
+                    <img src="{{ asset('asset/images/d0.jpg') }}" alt="Digital Dreams"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/d0.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Digital Dreams</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/s11.jpg') }}"
-                         alt="Neon Nights"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Neon Nights</div>
+                <div>
+                    <img src="{{ asset('asset/images/s11.jpg') }}" alt="Neon Nights"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/s11.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Neon Nights</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/suite13.jpg') }}"
-                         alt="Cyber Sunset"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Cyber Sunset</div>
+                <div>
+                    <img src="{{ asset('asset/images/suite13.jpg') }}" alt="Cyber Sunset"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/suite13.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Cyber Sunset</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/s3.jpg') }}"
-                         alt="Virtual Reality"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Virtual Reality</div>
+                <div>
+                    <img src="{{ asset('asset/images/s3.jpg') }}" alt="Virtual Reality"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/s3.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Virtual Reality</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/s8.jpg') }}"
-                         alt="Digital Landscape"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Digital Landscape</div>
+                <div>
+                    <img src="{{ asset('asset/images/s8.jpg') }}" alt="Digital Landscape"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/s8.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Digital Landscape</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/suite8.jpg') }}"
-                         alt="Pixel Perfect"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Pixel Perfect</div>
+                <div>
+                    <img src="{{ asset('asset/images/suite8.jpg') }}" alt="Pixel Perfect"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/suite8.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Pixel Perfect</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/d8.jpg') }}"
-                         alt="Future Vision"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Future Vision</div>
+                <div>
+                    <img src="{{ asset('asset/images/d8.jpg') }}" alt="Future Vision"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/d8.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Future Vision</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/s1.jpg') }}"
-                         alt="Tech Art"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Tech Art</div>
+                <div>
+                    <img src="{{ asset('asset/images/s1.jpg') }}" alt="Tech Art"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/s1.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Tech Art</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/d1.jpg') }}"
-                         alt="Digital Evolution"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Digital Evolution</div>
+                <div>
+                    <img src="{{ asset('asset/images/d1.jpg') }}" alt="Digital Evolution"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/d1.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Digital Evolution</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/suite1.jpg') }}"
-                         alt="Modern Masterpiece"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Modern Masterpiece</div>
+                <div>
+                    <img src="{{ asset('asset/images/suite1.jpg') }}" alt="Modern Masterpiece"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/suite1.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Modern Masterpiece</div>
                 </div>
 
-                <div class="relative group cursor-pointer">
-                    <img src="{{ asset('asset/images/suite12.jpg') }}"
-                         alt="Digital Expression"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-xl">
-                    <div class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg">Digital Expression</div>
+                <div>
+                    <img src="{{ asset('asset/images/suite12.jpg') }}" alt="Digital Expression"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                         onclick="openModal('{{ asset('asset/images/suite12.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Digital Expression</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Modal -->
-    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center">
-        <div class="max-w-4xl w-full mx-4">
-            <div class="relative">
-                <button onclick="closeModal()" class="absolute -top-10 right-0 text-white text-xl hover:text-gray-300">&times; Close</button>
-                <img id="modalImage" src="" alt="" class="w-full rounded-lg">
-                <h3 id="modalTitle" class="text-white text-xl font-semibold mt-4 text-center"></h3>
-            </div>
-        </div>
+    <!-- Fullscreen Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden">
+        <span class="absolute top-5 right-5 text-white text-3xl cursor-pointer" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="max-w-full max-h-full rounded-lg shadow-xl">
     </div>
 
-    <!-- JavaScript for Modal -->
+    <!-- JavaScript -->
     <script>
-        function openModal(imageSrc, title) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            const modalTitle = document.getElementById('modalTitle');
-
-            modalImage.src = imageSrc;
-            modalTitle.textContent = title;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('imageModal').classList.remove('hidden');
         }
 
         function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
+            document.getElementById('imageModal').classList.add('hidden');
         }
-
-        // Close modal when clicking outside the image
-        document.getElementById('imageModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeModal();
-            }
-        });
-
-        // Close modal with ESC key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeModal();
-            }
-        });
     </script>
 @endsection

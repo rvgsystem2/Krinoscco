@@ -984,44 +984,32 @@
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <!-- Gallery Item 1 -->
-                <div class="relative group">
-                    <img src="{{ asset('asset/images/suite2.jpg') }}" alt="Art Piece 1"
-                        class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
-                    </div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Art Title 1</div>
+                <div>
+                    <img src="{{ asset('asset/images/d8.jpg') }}" alt="Abstract Harmony"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                        onclick="openModal('{{ asset('asset/images/d8.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Abstract Harmony</div>
                 </div>
 
-                <!-- Gallery Item 2 -->
-                <div class="relative group">
-                    <img src="{{ asset('asset/images/suite13.jpg') }}" alt="Art Piece 2"
-                        class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
-                    </div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Art Title 2</div>
+                <div>
+                    <img src="{{ asset('asset/images/d0.jpg') }}" alt="Digital Dreams"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                        onclick="openModal('{{ asset('asset/images/d0.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Digital Dreams</div>
                 </div>
 
-                <!-- Gallery Item 3 -->
-                <div class="relative group">
-                    <img src="{{ asset('asset/images/suite11.jpg') }}" alt="Art Piece 3"
-                        class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
-                    </div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Art Title 3</div>
+                <div>
+                    <img src="{{ asset('asset/images/s11.jpg') }}" alt="Neon Nights"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                        onclick="openModal('{{ asset('asset/images/s11.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Neon Nights</div>
                 </div>
 
-                <!-- Gallery Item 4 -->
-                <div class="relative group">
-                    <img src="{{ asset('asset/images/suite10.jpg') }}" alt="Art Piece 4"
-                        class="w-full h-full object-cover rounded-lg shadow-md transition-all duration-300 transform group-hover:scale-105">
-                    <div
-                        class="absolute inset-0 bg-black opacity-40 rounded-lg group-hover:opacity-0 transition-opacity duration-300">
-                    </div>
-                    <div class="absolute bottom-4 left-4 text-white font-semibold text-lg">Art Title 4</div>
+                <div>
+                    <img src="{{ asset('asset/images/suite13.jpg') }}" alt="Cyber Sunset"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                        onclick="openModal('{{ asset('asset/images/suite13.jpg') }}')">
+                    <div class="text-center text-lg font-semibold mt-2">Cyber Sunset</div>
                 </div>
             </div>
         </div>
@@ -1045,16 +1033,11 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <!-- Testimonial 1 -->
-                    <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
-                        <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/suite6.jpg') }}" alt="Guest 1"
-                                class="w-16 h-16 rounded-full shadow-md">
-                            <div class="ml-4">
-                                <h4 class="text-xl font-bold text-white">John Doe</h4>
-                                <span class="text-sm text-gray-400">Frequent Traveler</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-300">
+                    <div
+                        class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 h-full flex flex-col">
+                        <h4 class="text-xl font-bold text-white">Rahul Sharma</h4>
+                        <span class="text-sm text-gray-400">Frequent Traveler</span>
+                        <p class="text-gray-300 flex-grow mt-4">
                             "Staying here was an amazing experience. The rooms are luxurious, and the staff is incredibly
                             accommodating. Highly recommend!"
                         </p>
@@ -1068,16 +1051,11 @@
                     </div>
 
                     <!-- Testimonial 2 -->
-                    <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
-                        <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/suite7.jpg') }}" alt="Guest 2"
-                                class="w-16 h-16 rounded-full shadow-md">
-                            <div class="ml-4">
-                                <h4 class="text-xl font-bold text-white">Emma Brown</h4>
-                                <span class="text-sm text-gray-400">Luxury Enthusiast</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-300">
+                    <div
+                        class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 h-full flex flex-col">
+                        <h4 class="text-xl font-bold text-white">Priya Kapoor</h4>
+                        <span class="text-sm text-gray-400">Luxury Enthusiast</span>
+                        <p class="text-gray-300 flex-grow mt-4">
                             "The attention to detail in the room design and amenities is exceptional. I felt pampered from
                             the moment I arrived."
                         </p>
@@ -1091,16 +1069,11 @@
                     </div>
 
                     <!-- Testimonial 3 -->
-                    <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
-                        <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/suite6.jpg') }}" alt="Guest 3"
-                                class="w-16 h-16 rounded-full shadow-md">
-                            <div class="ml-4">
-                                <h4 class="text-xl font-bold text-white">Emma Brown</h4>
-                                <span class="text-sm text-gray-400">Luxury Enthusiast</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-300">
+                    <div
+                        class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 h-full flex flex-col">
+                        <h4 class="text-xl font-bold text-white">Ananya Verma</h4>
+                        <span class="text-sm text-gray-400">Luxury Enthusiast</span>
+                        <p class="text-gray-300 flex-grow mt-4">
                             "The attention to detail in the room design and amenities is exceptional. I felt pampered from
                             the moment I arrived."
                         </p>
@@ -1114,41 +1087,13 @@
                     </div>
 
                     <!-- Testimonial 4 -->
-                    <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
-                        <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/suite7.jpg') }}" alt="Guest 4"
-                                class="w-16 h-16 rounded-full shadow-md">
-                            <div class="ml-4">
-                                <h4 class="text-xl font-bold text-white">Emma Brown</h4>
-                                <span class="text-sm text-gray-400">Luxury Enthusiast</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-300">
-                            "The attention to detail in the room design and amenities is exceptional. I felt pampered from
-                            the moment I arrived."
-                        </p>
-                        <div class="mt-6 flex space-x-1">
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 5 -->
-                    <div class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5">
-                        <div class="flex items-center mb-6">
-                            <img src="{{ asset('asset/images/d11.jpg') }}" alt="Guest 5"
-                                class="w-16 h-16 rounded-full shadow-md">
-                            <div class="ml-4">
-                                <h4 class="text-xl font-bold text-white">Emma Brown</h4>
-                                <span class="text-sm text-gray-400">Luxury Enthusiast</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-300">
-                            "The attention to detail in the room design and amenities is exceptional. I felt pampered from
-                            the moment I arrived."
+                    <div
+                        class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 h-full flex flex-col">
+                        <h4 class="text-xl font-bold text-white">Vikram Mehta</h4>
+                        <span class="text-sm text-gray-400">Business Traveler</span>
+                        <p class="text-gray-300 flex-grow mt-4">
+                            "Absolutely loved my stay here! The service was top-notch, and the location was perfect. The
+                            rooms were incredibly comfortable."
                         </p>
                         <div class="mt-6 flex space-x-1">
                             <i class="fas fa-star text-[#D4A017]"></i>
@@ -1171,6 +1116,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Add required CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
