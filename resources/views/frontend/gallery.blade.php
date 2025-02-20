@@ -40,7 +40,7 @@
                          onclick="openModal('{{ asset('asset/images/d0.jpg') }}')">
                     <div class="text-center text-lg font-semibold mt-2">Digital Dreams</div>
                 </div>
-
+ 
                 <div>
                     <img src="{{ asset('asset/images/s11.jpg') }}" alt="Neon Nights"
                          class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
