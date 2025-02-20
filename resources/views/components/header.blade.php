@@ -7,7 +7,7 @@
         position: relative;
         z-index: 20;
         border-bottom: 4px solid burlywood;
-       /* overflow: hidden; */
+        /* overflow: hidden; */
         /* Added brown border to the bottom */
     }
 
@@ -249,12 +249,13 @@
                         </svg>
                     </button>
                     <div id="accommodation-submenu" class="hidden pl-4">
-                        <a href="#accommodation1"
+                        <a href="{{ route('accommodation.standard') }}"
                             class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Standard
                             Room</a>
-                        <a href="#accommodation2"
-                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Deluxe Room</a>
-                        <a href="#accommodation3"
+                        <a href="{{ route('accommodation.deluxe') }}"
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Deluxe
+                            Room</a>
+                        <a href="{{ route('accommodation.luxury') }}"
                             class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Luxu
                             ry Suite</a>
                     </div>
@@ -271,23 +272,23 @@
                         </svg>
                     </button>
                     <div id="banquets-submenu" class="hidden pl-4">
-                        <a href="#banquet1"
-                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Option
-                            1</a>
-                        <a href="#banquet2"
-                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Option
-                            2</a>
+                        <a href="{{ route('banquets.lawn') }}"
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Lawn
+                            Package</a>
+                        <a href="{{ route('banquets.ballroom') }}"
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Ballroom
+                            Package</a>
                     </div>
                 </div>
 
-                <a href="#rules"
+                <a href="{{ route('rules-and-regulations') }}"
                     class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Rules
                     & Regulations</a>
-                <a href="#careers"
+                <a href="{{ route('careers') }}"
                     class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Careers</a>
-                <a href="#gallery"
+                <a href="{{ route('gallery') }}"
                     class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Gallery</a>
-                <a href="#contact"
+                <a href="{{ route('contact-us') }}"
                     class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Contact
                     Us</a>
             </div>

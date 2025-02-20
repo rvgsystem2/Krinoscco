@@ -27,103 +27,30 @@
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <div>
-                    <img src="{{ asset('asset/images/d8.jpg') }}" alt="Abstract Harmony"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/d8.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Abstract Harmony</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/d0.jpg') }}" alt="Digital Dreams"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/d0.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Digital Dreams</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/s11.jpg') }}" alt="Neon Nights"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/s11.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Neon Nights</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/suite13.jpg') }}" alt="Cyber Sunset"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/suite13.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Cyber Sunset</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/s3.jpg') }}" alt="Virtual Reality"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/s3.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Virtual Reality</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/s8.jpg') }}" alt="Digital Landscape"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/s8.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Digital Landscape</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/suite8.jpg') }}" alt="Pixel Perfect"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/suite8.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Pixel Perfect</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/d8.jpg') }}" alt="Future Vision"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/d8.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Future Vision</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/s1.jpg') }}" alt="Tech Art"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/s1.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Tech Art</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/d1.jpg') }}" alt="Digital Evolution"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/d1.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Digital Evolution</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/s1.jpg') }}" alt="Modern Masterpiece"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/s1.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Modern Masterpiece</div>
-                </div>
-
-                <div>
-                    <img src="{{ asset('asset/images/suite12.jpg') }}" alt="Digital Expression"
-                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
-                         onclick="openModal('{{ asset('asset/images/suite12.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Digital Expression</div>
-                </div>
+                @for ($i = 1; $i <= 50; $i++)
+                    <div>
+                        <img src="{{ asset("asset/gallery/gallery ($i).jpg") }}" alt="Abstract Harmony {{ $i }}"
+                            class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                            onclick="openModal('{{ asset("asset/gallery/gallery ($i).jpg") }}')">
+                    </div>
+                @endfor
             </div>
         </div>
     </section>
 
-    <!-- Fullscreen Modal -->
-    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden">
-        <span class="absolute top-5 right-5 text-white text-3xl cursor-pointer" onclick="closeModal()">&times;</span>
-        <img id="modalImage" class="max-w-full max-h-full rounded-lg shadow-xl">
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+        <div class="relative">
+            <button onclick="closeModal()" class="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full">
+                ✕
+            </button>
+            <img id="modalImage" class="max-w-full max-h-screen rounded-lg">
+        </div>
     </div>
 
-    <!-- JavaScript -->
     <script>
-        function openModal(imageSrc) {
-            document.getElementById('modalImage').src = imageSrc;
+        function openModal(imageUrl) {
+            document.getElementById('modalImage').src = imageUrl;
             document.getElementById('imageModal').classList.remove('hidden');
         }
 
