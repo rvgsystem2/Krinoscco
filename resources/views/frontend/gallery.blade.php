@@ -29,7 +29,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 @for ($i = 1; $i <= 50; $i++)
                     <div>
-                        <img src="{{ asset("asset/gallery/gallery ($i).jpg") }}" alt="Abstract Harmony {{ $i }}"
+                        <img src="{{ asset("asset/gallery/gallery-($i).jpg") }}" alt="Abstract Harmony {{ $i }}"
                             class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
                             onclick="openModal('{{ asset("asset/gallery/gallery ($i).jpg") }}')">
                     </div>
