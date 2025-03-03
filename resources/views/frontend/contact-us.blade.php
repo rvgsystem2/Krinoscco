@@ -3,48 +3,36 @@
 @section('content')
     <!-- Hero Section -->
     <div class="relative bg-gradient-to-b from-[#2c3e50] to-[#8B4513] text-white py-20 px-4">
-        <!-- Overlay Background (Optional) -->
         <div class="absolute inset-0 bg-black opacity-50"></div>
-
-        <!-- Glass Effect Content -->
         <div class="absolute inset-0 bg-white bg-opacity-20 backdrop-blur-md z-0"></div>
 
-        <!-- Content Inside the Hero Section -->
         <div class="relative container mx-auto text-center z-10">
-            <!-- Title with Enhanced Focus -->
             <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">
                 Contact Us
             </h1>
-
-            <!-- Description Text with Focus -->
             <p class="text-lg font-medium mb-6 text-[#bdc3c7] opacity-90 tracking-wide max-w-xl mx-auto">
                 We’d love to hear from you! Reach out to us anytime.
             </p>
-
-            <!-- Stylish Divider -->
             <div class="w-32 h-1 bg-gradient-to-r from-[#e67e22] to-[#f39c12] mx-auto rounded-full"></div>
         </div>
     </div>
 
-    <!-- Contact Us -->
+    <!-- Contact Section -->
     <section class="bg-gray-100 py-16 relative">
-        <!-- Decorative Elements -->
         <div class="absolute top-0 left-0 w-96 h-96 bg-[#D4A017]/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-3xl"></div>
 
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-            <!-- Heading Section -->
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-extrabold text-gray-900">Contact Us</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
                 <p class="mt-4 text-lg text-gray-600">
-                    We’d love to hear from you! Reach out to us anytime.
+                    Get in touch with us for any inquiries or assistance.
                 </p>
             </div>
 
-            <!-- Grid Section -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Contact Information -->
+                <!-- Contact Info -->
                 <div class="space-y-8">
                     <!-- Registered Address -->
                     <div class="flex items-start space-x-4">
@@ -53,72 +41,90 @@
                         </div>
                         <div>
                             <h4 class="font-semibold text-gray-800 text-lg">Registered Address</h4>
-                            <p class="text-gray-600">309, Amaniganj, Faizabad, Uttar Pradesh, 224001</p>
+                            <p class="text-gray-600">
+                                309, Amaniganj, Faizabad, Uttar Pradesh, 224001
+                            </p>
                         </div>
                     </div>
-                    <!-- Branch/Functional Office Address -->
+
+                    <!-- Functional Office -->
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
                             <span class="material-icons text-[#8B4513] text-4xl">apartment</span>
                         </div>
                         <div>
                             <h4 class="font-semibold text-gray-800 text-lg">Functional Office</h4>
-                            <p class="text-gray-600">Hotel Krinoscco, Amaniganj Ram Path, Ayodhya U.P, 224001</p>
+                            <p class="text-gray-600">
+                                Hotel Krinoscco, Amaniganj Ram Path, Ayodhya, Uttar Pradesh, 224001
+                            </p>
                         </div>
                     </div>
+
                     <!-- Email -->
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
                             <span class="material-icons text-[#8B4513] text-4xl">email</span>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-800 text-lg">Email Us</h4>
+                            <h4 class="font-semibold text-gray-800 text-lg">Email Address</h4>
                             <p class="text-gray-600">info@krinoscco.com</p>
                         </div>
                     </div>
-                    <!-- Phone -->
+
+                    <!-- Phone Number -->
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0">
                             <span class="material-icons text-[#8B4513] text-4xl">phone</span>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-gray-800 text-lg">Call Us</h4>
+                            <h4 class="font-semibold text-gray-800 text-lg">Contact Number</h4>
                             <p class="text-gray-600">+91-7275092525</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <form action="#" method="POST"
-                    class="space-y-6 bg-white p-8 rounded-xl shadow-lg transition-transform duration-700 hover:shadow-2xl hover:-translate-y-2">
+                <form action="#" method="POST" class="space-y-6 bg-white p-8 rounded-xl shadow-lg transition-transform duration-700 hover:shadow-2xl hover:-translate-y-2">
+                    @csrf
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
                         <input type="text" name="name" id="name" required
-                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-[#D4A017] focus:border-[#D4A017]">
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
                         <input type="email" name="email" id="email" required
-                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-[#D4A017] focus:border-[#D4A017]">
                     </div>
                     <div>
                         <label for="phone" class="block text-sm font-medium text-gray-700">Your Mobile Number</label>
                         <input type="tel" name="phone" id="phone" required
-                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500"
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-[#D4A017] focus:border-[#D4A017]"
                             placeholder="+91-7275092525">
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                         <textarea name="message" id="message" rows="4" required
-                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500"></textarea>
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-[#D4A017] focus:border-[#D4A017]"></textarea>
                     </div>
                     <div>
                         <button type="submit"
-                            class="w-full bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white font-medium py-3 rounded-lg shadow-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            class="w-full bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white font-medium py-3 rounded-lg shadow-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#D4A017]">
                             Send Message
                         </button>
                     </div>
                 </form>
+            </div>
+
+            <!-- Google Map -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-gray-900 text-center mb-6">Find Us on the Map</h3>
+                <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14158.26218436891!2d82.13430905337832!3d26.76501683557068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0907c32a6d1f%3A0xf5e1e35db3028a26!2sAmaniganj%2C%20Faizabad%2C%20Uttar%20Pradesh%20224001!5e0!3m2!1sen!2sin!4v1711222345678"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>

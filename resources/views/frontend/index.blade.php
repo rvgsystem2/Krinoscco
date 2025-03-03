@@ -221,13 +221,18 @@
                     <div class="space-y-6">
                         <p class="text-lg text-gray-700 leading-relaxed">
                             The standard room has all the essential conveniences and is tastefully designed for your
-                            enjoyable stay. Hotel Krinoscco redefines luxury with an unwavering commitment to international
-                            standards of service and style.
+                            enjoyable stay.Hotel Krinoscco redefines luxury with an unwavering commitment to international
+                            standards of service and style. Setting a new benchmark for unparalleled accommodation and
+                            exceptional value, it embodies the epitome of contemporary elegance. Here, the fusion of “high
+                            tech” amenities seamlessly intertwines with an unparalleled “high touch” service ethos—a rarity
+                            in the tapestry of Ayodhya’s hospitality landscape.
                         </p>
                         <p class="text-lg text-gray-700 leading-relaxed">
-                            Setting a new benchmark for unparalleled accommodation and exceptional value, it embodies the
-                            epitome of contemporary elegance. Here, the fusion of "high tech" amenities seamlessly
-                            intertwines with an unparalleled "high touch" service ethos.
+                            Centrally located in the heart of Ayodhya, a mere 15-minute taxi ride from Ayodhya Cantt. &
+                            Ayodhya railway stations, and conveniently proximate to the burgeoning ayodhya airport, Hotel
+                            Krinoscco stands as an epitome of accessibility. Merely two hours by road from the bustling
+                            Lucknow airport, it offers a gateway to seamless luxury and unmatched convenience in this
+                            historical city. We are delivering the highest level of pleasure and a wonderful experience.
                         </p>
 
                         <!-- Feature List -->
@@ -254,12 +259,12 @@
 
                         <!-- CTA Section -->
                         <div class="flex items-center gap-6 pt-4">
-                            <a href="{{ route('gallery') }}"
+                            <a href="{{ route('about') }}"
                                 class="group relative px-8 py-4 bg-[#8B4513] text-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                                 <div
                                     class="absolute inset-0 bg-[#6B3410] transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
                                 </div>
-                                <span class="relative z-10 font-semibold">Discover More</span>
+                                <span class="relative z-10 font-semibold">Know More</span>
                             </a>
                             <a href="{{ route('gallery') }}"
                                 class="group flex items-center gap-3 text-[#1a1a2e] font-semibold hover:text-[#8B4513] transition-colors duration-300">
@@ -981,206 +986,7 @@
 
 
     <!-- What Our Guests Say -->
-    <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e] relative overflow-hidden">
-        <!-- Decorative Elements -->
-        <div class="absolute top-0 left-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-[100px]"></div>
-        <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-[100px]"></div>
-
-        <div class="container mx-auto px-4 relative z-10">
-            <!-- Section Header -->
-            <h2 class="text-5xl font-bold text-white text-center mb-12">
-                What Our Guests Say
-                <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
-            </h2>
-
-            <!-- Swiper Slider -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- Testimonial 1 -->
-                    <div
-                        class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 h-full flex flex-col">
-                        <h4 class="text-xl font-bold text-white">Rahul Sharma</h4>
-                        <span class="text-sm text-gray-400">Frequent Traveler</span>
-                        <p class="text-gray-300 flex-grow mt-4">
-                            "Staying here was an amazing experience. The rooms are luxurious, and the staff is incredibly
-                            accommodating. Highly recommend!"
-                        </p>
-                        <div class="mt-6 flex space-x-1">
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-gray-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div
-                        class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 h-full flex flex-col">
-                        <h4 class="text-xl font-bold text-white">Priya Kapoor</h4>
-                        <span class="text-sm text-gray-400">Luxury Enthusiast</span>
-                        <p class="text-gray-300 flex-grow mt-4">
-                            "The attention to detail in the room design and amenities is exceptional. I felt pampered from
-                            the moment I arrived."
-                        </p>
-                        <div class="mt-6 flex space-x-1">
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div
-                        class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 h-full flex flex-col">
-                        <h4 class="text-xl font-bold text-white">Ananya Verma</h4>
-                        <span class="text-sm text-gray-400">Luxury Enthusiast</span>
-                        <p class="text-gray-300 flex-grow mt-4">
-                            "The attention to detail in the room design and amenities is exceptional. I felt pampered from
-                            the moment I arrived."
-                        </p>
-                        <div class="mt-6 flex space-x-1">
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 4 -->
-                    <div
-                        class="swiper-slide bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 h-full flex flex-col">
-                        <h4 class="text-xl font-bold text-white">Vikram Mehta</h4>
-                        <span class="text-sm text-gray-400">Business Traveler</span>
-                        <p class="text-gray-300 flex-grow mt-4">
-                            "Absolutely loved my stay here! The service was top-notch, and the location was perfect. The
-                            rooms were incredibly comfortable."
-                        </p>
-                        <div class="mt-6 flex space-x-1">
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                            <i class="fas fa-star text-[#D4A017]"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pagination and Navigation -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev custom-button-prev">
-                    <span class="material-icons">arrow_back_ios</span>
-                </div>
-                <div class="swiper-button-next custom-button-next">
-                    <span class="material-icons">arrow_forward_ios</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Add required CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <style>
-        /* Custom Swiper Button Styles */
-        .custom-button-prev,
-        .custom-button-next {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(45deg, #8B4513, #D4A017);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            opacity: 0.9;
-            position: absolute;
-            top: 70%;
-            transform: translateY(-50%);
-            z-index: 10;
-        }
-
-        .custom-button-prev:hover,
-        .custom-button-next:hover {
-            transform: translateY(-50%) scale(1.05);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-            opacity: 1;
-        }
-
-        .custom-button-prev::after,
-        .custom-button-next::after {
-            display: none;
-            /* Hide default Swiper arrows */
-        }
-
-        .custom-button-prev .material-icons,
-        .custom-button-next .material-icons {
-            color: white;
-            font-size: 24px;
-            font-weight: 600;
-        }
-
-        .custom-button-prev {
-            left: -5px;
-        }
-
-        .custom-button-next {
-            right: -5px;
-        }
-
-        /* Ensure button visibility on smaller screens */
-        @media (max-width: 768px) {
-
-            .custom-button-prev,
-            .custom-button-next {
-                width: 50px;
-                height: 50px;
-            }
-
-            .custom-button-prev .material-icons,
-            .custom-button-next .material-icons {
-                font-size: 20px;
-            }
-        }
-    </style>
-
-    <!-- Add required JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-    </script>
+    @include('components.testimonial')
 
 
     <!-- Contact Us -->
