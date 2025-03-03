@@ -57,9 +57,9 @@ class HomeController extends Controller
         return view('frontend.deluxe-room');
     }
 
-    public function luxurySuite()
+    public function luxuryRoom()
     {
-        return view('frontend.luxury-suite');
+        return view('frontend.luxury-room');
     }
 
     // Banquets and Meetings Routes
@@ -74,10 +74,12 @@ class HomeController extends Controller
         return view('frontend.ballroom-package');
     }
 
-    public function termandcondition(){
+    public function termandcondition()
+    {
         return view('frontend.termandcondition');
     }
-    public function conditions(){
+    public function conditions()
+    {
         return view('frontend.conditions');
     }
     public function liability()
@@ -88,7 +90,8 @@ class HomeController extends Controller
     {
         return view('frontend.miscelleneous');
     }
-    public function details(){
+    public function details()
+    {
         return view('frontend.details');
     }
     public function information()

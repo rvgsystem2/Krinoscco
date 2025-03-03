@@ -1,28 +1,6 @@
 @extends('components.main')
 
 @section('content')
-    <style>
-        /* Animated Gradient Effect */
-        .animated-gradient {
-            background: linear-gradient(270deg, #1a1a2e, #16213e, #8B4513);
-            background-size: 600% 600%;
-            animation: gradientShift 15s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-    </style>
 
     <!-- Hero Section -->
     <div class="relative bg-gradient-to-b from-[#2c3e50] to-[#8B4513] text-white py-20 px-4">
@@ -67,8 +45,7 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/d1.jpg') }}"
-                            alt="Hotel Krinoscco Main"
+                        <img id="main-image" src="{{ asset('asset/images/d1.jpg') }}" alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
                         <div
@@ -148,14 +125,14 @@
 
                         <!-- CTA Section -->
                         <div class="flex items-center gap-6 pt-4">
-                            <a href="{{route('gallery')}}"
+                            <a href="{{ route('gallery') }}"
                                 class="group relative px-8 py-4 bg-[#8B4513] text-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                                 <div
                                     class="absolute inset-0 bg-[#6B3410] transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
                                 </div>
                                 <span class="relative z-10 font-semibold">Discover More</span>
                             </a>
-                            <a href="{{route('gallery')}}"
+                            <a href="{{ route('gallery') }}"
                                 class="group flex items-center gap-3 text-[#1a1a2e] font-semibold hover:text-[#8B4513] transition-colors duration-300">
                                 <span>View Gallery</span>
                                 <i
@@ -240,79 +217,7 @@
     </section>
 
     <!-- Real-time Availability Section -->
-    <section id="booking" class="py-20 animated-gradient bg-gray-800">
-        <div class="container mx-auto px-4">
-            <!-- Title Section -->
-            <h2 class="text-4xl font-bold text-white mb-16 text-center">
-                Book Your Stay
-                <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
-            </h2>
-
-            <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden p-8">
-                <form action="#"
-                    class="bg-transparent flex flex-col sm:flex-row items-center sm:space-x-6 p-6 rounded-lg shadow-lg space-y-6 sm:space-y-0">
-
-                    <!-- Check-in -->
-                    <div class="flex flex-col space-y-2 w-full sm:w-1/4">
-                        <label class="text-gray-700 font-medium">Check-in</label>
-                        <input type="text" id="checkin" placeholder="Select Check-in"
-                            class="border border-gray-300 rounded-lg p-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
-                    </div>
-
-                    <!-- Check-out -->
-                    <div class="flex flex-col space-y-2 w-full sm:w-1/4">
-                        <label class="text-gray-700 font-medium">Check-out</label>
-                        <input type="text" id="checkout" placeholder="Select Check-out"
-                            class="border border-gray-300 rounded-lg p-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
-                    </div>
-
-                    <!-- Adults -->
-                    <div class="flex flex-col space-y-2 w-full sm:w-1/4">
-                        <label class="text-gray-700 font-medium">Adults</label>
-                        <select
-                            class="border border-gray-300 rounded-lg p-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
-                            <option value="1">1 Adult</option>
-                            <option value="2">2 Adults</option>
-                            <option value="3">3 Adults</option>
-                            <option value="4">4 Adults</option>
-                        </select>
-                    </div>
-
-                    <!-- Children -->
-                    <div class="flex flex-col space-y-2 w-full sm:w-1/4">
-                        <label class="text-gray-700 font-medium">Children</label>
-                        <select
-                            class="border border-gray-300 rounded-lg p-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
-                            <option value="1">No Children</option>
-                            <option value="2">1 Child</option>
-                            <option value="3">2 Children</option>
-                            <option value="4">3 Children</option>
-                        </select>
-                    </div>
-
-                    <!-- Rooms -->
-                    <div class="flex flex-col space-y-2 w-full sm:w-1/4">
-                        <label class="text-gray-700 font-medium">Rooms</label>
-                        <select
-                            class="border border-gray-300 rounded-lg p-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
-                            <option value="1">1 Room</option>
-                            <option value="2">2 Rooms</option>
-                            <option value="3">3 Rooms</option>
-                            <option value="4">4 Rooms</option>
-                        </select>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div class="flex justify-center items-center w-full sm:w-auto">
-                        <a href="#"
-                            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white rounded-lg transition-all duration-500 ease-in-out transform hover:from-[#D4A017] hover:to-[#8B4513] hover:scale-105">
-                            Check Now
-                        </a>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+    @include('components.booking')
 
     <!-- JavaScript for Image Change -->
     <script>

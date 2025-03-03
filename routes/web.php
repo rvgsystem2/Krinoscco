@@ -33,7 +33,7 @@ Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact-u
 // Accommodation Routes
 Route::get('/accommodation/standard-room', [HomeController::class, 'standardRoom'])->name('accommodation.standard');
 Route::get('/accommodation/deluxe-room', [HomeController::class, 'deluxeRoom'])->name('accommodation.deluxe');
-Route::get('/accommodation/luxury-suite', [HomeController::class, 'luxurySuite'])->name('accommodation.luxury');
+Route::get('/accommodation/luxury-room', [HomeController::class, 'luxuryRoom'])->name('accommodation.luxury');
 
 // Banquets and Meetings Routes
 Route::get('/banquets/lawn-package', [HomeController::class, 'lawnPackage'])->name('banquets.lawn');
