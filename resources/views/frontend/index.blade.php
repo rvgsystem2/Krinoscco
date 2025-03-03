@@ -109,7 +109,6 @@
         }
     </style>
 
-
     <!-- Hero Section with Video Background -->
     <section class="relative h-screen overflow-hidden">
         <!-- Video Background with improved loading -->
@@ -296,9 +295,17 @@
                 <!-- 3D Viewer Section -->
                 <div class="space-y-8">
                     <div class="bg-[#16213e] rounded-2xl h-[500px] relative overflow-hidden shadow-2xl group">
-                        <!-- 3D View Container -->
-                        <img src="{{ asset('asset/images/s2.jpg') }}" alt="3D Room View"
-                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+
+                        <!-- Room Images (Swappable) -->
+                        <div id="bedroomImage" class="room-image">
+                            <img src="{{ asset('asset/images/s1.jpg') }}" class="w-full h-full object-cover">
+                        </div>
+                        <div id="bathroomImage" class="room-image hidden">
+                            <img src="{{ asset('asset/images/suite8.jpg') }}" class="w-full h-full object-cover">
+                        </div>
+                        <div id="livingareaImage" class="room-image hidden">
+                            <img src="{{ asset('asset/images/suite10.jpg') }}" class="w-full h-full object-cover">
+                        </div>
 
                         <!-- Interactive Controls -->
                         <div class="absolute top-4 right-4 flex space-x-3">
@@ -321,16 +328,16 @@
                             </p>
                             <!-- Room Navigation -->
                             <div class="flex space-x-4 mt-4">
-                                <button
-                                    class="px-4 py-2 bg-white/10 rounded-lg hover:bg-[#8B4513] transition-colors duration-300 text-white text-sm">
+                                <button onclick="showRoom('bedroom', this)"
+                                    class="room-tab px-4 py-2 rounded-lg transition-colors duration-300 text-white text-sm">
                                     Bedroom
                                 </button>
-                                <button
-                                    class="px-4 py-2 bg-white/10 rounded-lg hover:bg-[#8B4513] transition-colors duration-300 text-white text-sm">
+                                <button onclick="showRoom('bathroom', this)"
+                                    class="room-tab px-4 py-2 rounded-lg transition-colors duration-300 text-white text-sm">
                                     Bathroom
                                 </button>
-                                <button
-                                    class="px-4 py-2 bg-white/10 rounded-lg hover:bg-[#8B4513] transition-colors duration-300 text-white text-sm">
+                                <button onclick="showRoom('livingarea', this)"
+                                    class="room-tab px-4 py-2 rounded-lg transition-colors duration-300 text-white text-sm">
                                     Living Area
                                 </button>
                             </div>
@@ -351,7 +358,6 @@
 
                 <!-- Features Section -->
                 <div class="space-y-6">
-                    <!-- Room Features Card -->
                     <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl backdrop-blur-lg border border-white/5">
                         <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
                             <i class="fas fa-star text-[#8B4513] mr-3"></i>
@@ -399,22 +405,49 @@
                             </div>
                         </div>
 
-                        <!-- CTA Button -->
-                        <!-- CTA Button as <a> -->
                         <a href="#booking"
                             class="w-full mt-8 py-4 text-white text-center font-semibold rounded-lg
-       bg-gradient-to-r from-[#8B4513] to-[#D4A017]
-       hover:from-[#D4A017] hover:to-[#8B4513]
-       transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-[#D4A017]/50
-       block">
+                        bg-gradient-to-r from-[#8B4513] to-[#D4A017]
+                        hover:from-[#D4A017] hover:to-[#8B4513]
+                        transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-[#D4A017]/50
+                        block">
                             Book This Room
                         </a>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        .room-image {
+            display: none;
+        }
+
+        .room-image.active {
+            display: block;
+        }
+
+        .room-tab {
+            background-color: rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+
+        .room-tab.active-tab {
+            background-color: #8B4513;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function showRoom(room, button) {
+            document.querySelectorAll('.room-image').forEach(el => el.classList.remove('active'));
+            document.getElementById(room + 'Image').classList.add('active');
+            document.querySelectorAll('.room-tab').forEach(tab => tab.classList.remove('active-tab'));
+            button.classList.add('active-tab');
+        }
+        document.addEventListener('DOMContentLoaded', () => document.querySelector('.room-tab').click());
+    </script>
 
     <!-- Smart Services Section -->
     <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e] relative overflow-hidden">

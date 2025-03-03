@@ -24,17 +24,44 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- AOS (Animate on Scroll) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
     <!-- Tailwind CSS -->
     @vite('resources/css/app.css')
 
     <!-- Global Styles -->
     <style>
-        html, body {
-            overflow-x: hidden; /* Prevent horizontal scroll */
-            overflow-y: auto; /* Allow vertical scrolling */
+        html,
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+            /* Enables smooth scrolling */
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #8B4513;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            transition: opacity 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #backToTop:hover {
+            background-color: #9e5018;
+        }
+
+        #backToTop .material-icons {
+            font-size: 24px;
         }
     </style>
 </head>
@@ -44,8 +71,8 @@
     <!-- Preloader -->
     <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
         <div class="relative flex items-center justify-center">
-            <!-- Rotating Loader -->
-            <div class="animate-spin rounded-full h-24 w-24 border-t-4 border-b-4 border-transparent flex items-center justify-center">
+            <div
+                class="animate-spin rounded-full h-24 w-24 border-t-4 border-b-4 border-transparent flex items-center justify-center">
                 <img src="{{ asset('asset/images/logo.png') }}" alt="Logo" class="h-auto w-auto">
             </div>
         </div>
@@ -62,29 +89,48 @@
     <!-- Footer -->
     @include('components.footer')
 
+    <!-- Back to Top Button with Google Icon -->
+    <button id="backToTop" title="Back to Top">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
     <!-- Swiper JS (For Sliders) -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- AOS (Animate on Scroll) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
-
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Initialize AOS animations
-            AOS.init();
-
-            // Preloader Fade Out Effect
+        document.addEventListener("DOMContentLoaded", function() {
             const preloader = document.getElementById("preloader");
+            const backToTop = document.getElementById("backToTop");
+
+            // Preloader Fade Out
             if (preloader) {
-                window.addEventListener("load", function () {
+                window.addEventListener("load", function() {
                     preloader.style.opacity = "0";
                     setTimeout(() => {
                         preloader.style.display = "none";
-                    }, 500); // Adjust fade-out transition time
+                    }, 500);
                 });
             }
+
+            // Show/hide Back to Top button
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 300) {
+                    backToTop.style.display = "flex";
+                } else {
+                    backToTop.style.display = "none";
+                }
+            });
+
+            // Scroll back to top smoothly when button clicked
+            backToTop.addEventListener("click", function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
         });
     </script>
 
 </body>
+
 </html>
