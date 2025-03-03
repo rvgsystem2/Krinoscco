@@ -77,7 +77,8 @@
             </div>
         </div>
     </div>
-
+    
+    @include('components.disclaimer')
     <!-- Header -->
     @include('components.header')
 

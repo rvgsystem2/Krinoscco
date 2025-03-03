@@ -172,7 +172,7 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/s1.jpg') }}" alt="Hotel Krinoscco Main"
+                        <img id="main-image" src="{{ asset('asset/images/about.png') }}" alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
                         <div
@@ -184,17 +184,17 @@
                     <!-- Image Gallery -->
                     <div class="grid grid-cols-3 gap-4 transition-opacity duration-500">
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/s2.jpg') }}" alt="Hotel Detail 1"
+                            <img src="{{ asset('asset/images/DSC_4058-scaled.jpg') }}" alt="Hotel Detail 1"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/s3.jpg') }}" alt="Hotel Detail 2"
+                            <img src="{{ asset('asset/images/DSC02813-1-scaled.jpg') }}" alt="Hotel Detail 2"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
                         <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/s4.jpg') }}" alt="Hotel Detail 3"
+                            <img src="{{ asset('asset/images/luxury-room.jpg') }}" alt="Hotel Detail 3"
                                 class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                                 onclick="changeMainImage(this)" />
                         </div>
@@ -850,7 +850,7 @@
                 <!-- Standard Room -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/d2.jpg') }}" alt="Standard Room"
+                        <img src="{{ asset('asset/images/Standerd-room.jpg') }}" alt="Standard Room"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Standard Room</h3>
@@ -866,7 +866,7 @@
                 <!-- Deluxe Room -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/d4.jpg') }}" alt="Deluxe Room"
+                        <img src="{{ asset('asset/images/deluxe-room.jpg') }}" alt="Deluxe Room"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Deluxe Room</h3>
@@ -878,14 +878,14 @@
                     </a>
                 </div>
 
-                <!-- Luxury Suite -->
+                <!-- Luxury Room -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/d11.jpg') }}" alt="Luxury Suite"
+                        <img src="{{ asset('asset/images/luxury-room.jpg') }}" alt="Luxury Suite"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">
-                        Suite</h3>
+                        Luxury Room</h3>
                     <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our Suite—a symphony of
                         sophistication, where indulgence meets exclusivity for an unparalleled escape.</p>
                     <a href="{{ route('accommodation.luxury') }}"
@@ -912,7 +912,7 @@
                 <!-- Lawn Package -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/d11.jpg') }}" alt="Lawn Package"
+                        <img src="{{ asset('asset/images/lawn.jpg') }}" alt="Lawn Package"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Lawn Package</h3>
@@ -927,7 +927,7 @@
                 <!-- Ballroom Package -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/d11.jpg') }}" alt="Ballroom Package"
+                        <img src="{{ asset('asset/images/Ballroom.jpg') }}" alt="Ballroom Package"
                             class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Ballroom Package</h3>

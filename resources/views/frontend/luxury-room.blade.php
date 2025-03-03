@@ -1,7 +1,6 @@
 @extends('components.main')
 
 @section('content')
-
     <!-- Hero Section -->
     <div class="relative bg-gradient-to-b from-[#2c3e50] to-[#8B4513] text-white py-20 px-4">
         <!-- Overlay Background (Optional) -->
@@ -37,48 +36,57 @@
 
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center gap-16 relative">
-                <!-- Image Section with Multiple Images -->
-                <div class="w-full lg:w-1/2 space-y-6 group">
-                    <!-- Main Image with Hover Effect -->
-                    <div
-                        class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
+                <!-- Image Section with Auto Slider -->
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <!-- Main Image Carousel (Swiper) -->
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/s1.jpg') }}" alt="Hotel Krinoscco Main"
-                            class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
+                        <div class="swiper luxury-slider relative">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('asset/images/s1.jpg') }}" alt="Hotel Krinoscco Main"
+                                        class="w-full h-[500px] object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('asset/images/s2.jpg') }}" alt="Hotel Detail 1"
+                                        class="w-full h-[500px] object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('asset/images/suite3.jpg') }}" alt="Hotel Detail 2"
+                                        class="w-full h-[500px] object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('asset/images/s3.jpg') }}" alt="Hotel Detail 3"
+                                        class="w-full h-[500px] object-cover" />
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- Arrows -->
+                        <div
+                            class="swiper-button-prev !text-white !font-bold !w-12 !h-12 !bg-[#8B4513]/80 rounded-full flex items-center justify-center shadow-lg hover:bg-[#8B4513] z-50">
+                        </div>
+                        <div
+                            class="swiper-button-next !text-white !font-bold !w-12 !h-12 !bg-[#8B4513]/80 rounded-full flex items-center justify-center shadow-lg hover:bg-[#8B4513] z-50">
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20"></div>
                         <!-- Floating Badge -->
                         <div
                             class="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg z-20">
                             <span class="text-[#1a1a2e] font-semibold">Est. 2024</span>
                         </div>
                     </div>
-
-                    <!-- Image Gallery -->
-                    <div class="grid grid-cols-3 gap-4 transition-opacity duration-500">
-                        <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/s2.jpg') }}" alt="Hotel Detail 1"
-                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                                onclick="changeMainImage(this)" />
-                        </div>
-                        <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/suite3.jpg') }}" alt="Hotel Detail 2"
-                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                                onclick="changeMainImage(this)" />
-                        </div>
-                        <div class="overflow-hidden rounded-xl shadow-lg">
-                            <img src="{{ asset('asset/images/s3.jpg') }}" alt="Hotel Detail 3"
-                                class="w-full h-24 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
-                                onclick="changeMainImage(this)" />
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Content Section -->
                 <div class="w-full lg:w-1/2 space-y-8">
-                    <!-- Section Title -->
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
                             <div class="w-20 h-[2px] bg-[#8B4513]"></div>
-                            <span class="text-[#8B4513] font-semibold uppercase tracking-wider"> Suite</span>
+                            <span class="text-[#8B4513] font-semibold uppercase tracking-wider">Luxury Room</span>
                         </div>
                         <h2 class="text-4xl lg:text-5xl font-bold text-[#1a1a2e] leading-tight">
                             Where Every Moment
@@ -88,18 +96,17 @@
                         </h2>
                     </div>
 
-                    <!-- Content -->
                     <div class="space-y-6">
                         <p class="text-lg text-gray-700 leading-relaxed">
-                            The Suite has all the essential conveniences and is tastefully designed for your
-                            enjoyable stay. Hotel Krinoscco redefines suite with an unwavering commitment to international
-                            standards of service and style.
+                            The Suite has all the essential conveniences and is tastefully designed for your enjoyable stay.
+                            Hotel Krinoscco redefines suite with an unwavering commitment to international standards of
+                            service and style.
                         </p>
                         <p class="text-lg text-gray-700 leading-relaxed">
                             Setting a new benchmark for unparalleled accommodation and exceptional value, it embodies the
                             epitome of contemporary elegance.
                         </p>
-                        <!-- Feature List -->
+
                         <div class="grid grid-cols-2 gap-6 py-6">
                             <div class="flex items-center gap-4">
                                 <div class="w-12 h-12 rounded-full bg-[#8B4513]/10 flex items-center justify-center">
@@ -121,7 +128,6 @@
                             </div>
                         </div>
 
-                        <!-- CTA Section -->
                         <div class="flex items-center gap-6 pt-4">
                             <a href="{{ route('gallery') }}"
                                 class="group relative px-8 py-4 bg-[#8B4513] text-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -140,6 +146,8 @@
                     </div>
                 </div>
             </div>
+
+
 
             <!-- Room Features -->
             <div class="space-y-6 py-12">
@@ -216,6 +224,34 @@
 
     <!-- Real-time Availability Section -->
     @include('components.booking')
+
+    <!-- Add SwiperJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.luxury-slider', {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true,
+                }
+            });
+        });
+    </script>
 
     <!-- JavaScript for Image Change -->
     <script>
