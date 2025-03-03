@@ -35,9 +35,7 @@
         <!-- Content Inside the Hero Section -->
         <div class="relative container mx-auto text-center z-10">
             <!-- Title with Enhanced Focus -->
-            <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">
-             Suite
-            </h1>
+            <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">Luxury</h1>
 
             <!-- Description Text with Focus -->
             <p class="text-lg font-medium mb-6 text-[#bdc3c7] opacity-90 tracking-wide max-w-xl mx-auto">
@@ -67,8 +65,7 @@
                     <div
                         class="relative overflow-hidden rounded-2xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02]">
                         <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <img id="main-image" src="{{ asset('asset/images/s1.jpg') }}"
-                            alt="Hotel Krinoscco Main"
+                        <img id="main-image" src="{{ asset('asset/images/s1.jpg') }}" alt="Hotel Krinoscco Main"
                             class="w-full h-[500px] object-cover transform transition-transform duration-700 hover:scale-110" />
                         <!-- Floating Badge -->
                         <div
@@ -148,14 +145,14 @@
 
                         <!-- CTA Section -->
                         <div class="flex items-center gap-6 pt-4">
-                            <a href="{{route('gallery')}}"
+                            <a href="{{ route('gallery') }}"
                                 class="group relative px-8 py-4 bg-[#8B4513] text-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                                 <div
                                     class="absolute inset-0 bg-[#6B3410] transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
                                 </div>
                                 <span class="relative z-10 font-semibold">Discover More</span>
                             </a>
-                            <a href="{{route('gallery')}}"
+                            <a href="{{ route('gallery') }}"
                                 class="group flex items-center gap-3 text-[#1a1a2e] font-semibold hover:text-[#8B4513] transition-colors duration-300">
                                 <span>View Gallery</span>
                                 <i
@@ -168,7 +165,7 @@
 
             <!-- Room Features -->
             <div class="space-y-6 py-12">
-                <h1 class="text-3xl text-gray-800">The  suit room has all the essential conveniences and is tastefully
+                <h1 class="text-3xl text-gray-800">The suit room has all the essential conveniences and is tastefully
                     designed for your enjoyable stay. We are delivering the highest level of pleasure and a wonderful
                     experience.</h1>
                 <h3 class="text-2xl font-semibold text-[#1a1a2e]">Room Features</h3>
