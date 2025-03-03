@@ -1,5 +1,6 @@
 <!-- What Our Guests Say -->
 <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e] relative overflow-hidden">
+    
     <!-- Decorative Elements -->
     <div class="absolute top-0 left-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-[100px]"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-[100px]"></div>
@@ -99,6 +100,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <!-- Required CSS and Fonts -->
