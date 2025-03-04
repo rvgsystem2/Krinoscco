@@ -913,44 +913,48 @@
     <!-- Digital Art Gallery -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-5xl font-bold text-[#1a1a2e] mb-16 text-center">
+            <!-- Section Title -->
+            <h2 class="text-5xl font-bold text-[#1a1a2e] mb-12 text-center">
                 Digital Art Gallery
                 <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
             </h2>
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <div>
+                <div class="group relative">
                     <img src="{{ asset('asset/images/d8.jpg') }}" alt="Abstract Harmony"
-                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer transition-transform transform group-hover:scale-105"
                         onclick="openModal('{{ asset('asset/images/d8.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Abstract Harmony</div>
                 </div>
 
-                <div>
+                <div class="group relative">
                     <img src="{{ asset('asset/images/d0.jpg') }}" alt="Digital Dreams"
-                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer transition-transform transform group-hover:scale-105"
                         onclick="openModal('{{ asset('asset/images/d0.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Digital Dreams</div>
                 </div>
 
-                <div>
+                <div class="group relative">
                     <img src="{{ asset('asset/images/s11.jpg') }}" alt="Neon Nights"
-                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer transition-transform transform group-hover:scale-105"
                         onclick="openModal('{{ asset('asset/images/s11.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Neon Nights</div>
                 </div>
 
-                <div>
+                <div class="group relative">
                     <img src="{{ asset('asset/images/suite13.jpg') }}" alt="Cyber Sunset"
-                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer transition-transform transform group-hover:scale-105"
                         onclick="openModal('{{ asset('asset/images/suite13.jpg') }}')">
-                    <div class="text-center text-lg font-semibold mt-2">Cyber Sunset</div>
                 </div>
+            </div>
+
+            <!-- See Gallery Button -->
+            <div class="mt-12 text-center">
+                <a href="{{ route('gallery') }}"
+                    class="inline-block bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    See Gallery
+                </a>
             </div>
         </div>
     </section>
-
 
     <!-- What Our Guests Say -->
     @include('components.testimonial')
