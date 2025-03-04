@@ -57,50 +57,58 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center gap-16 relative">
 
-                <!-- Image Section with Auto Slider -->
-                <div class="w-full lg:w-1/2 space-y-6">
-                    <!-- Main Image Carousel (Swiper) -->
-                    <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                        <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
-                        <div class="swiper luxury-slider relative">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('asset/images/s1.jpg') }}" alt="Hotel Krinoscco Main"
-                                        class="w-full h-[500px] object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('asset/images/s2.jpg') }}" alt="Hotel Detail 1"
-                                        class="w-full h-[500px] object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('asset/images/suite3.jpg') }}" alt="Hotel Detail 2"
-                                        class="w-full h-[500px] object-cover" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('asset/images/s3.jpg') }}" alt="Hotel Detail 3"
-                                        class="w-full h-[500px] object-cover" />
-                                </div>
+               <!-- Image Section with Auto Slider -->
+               <div class="w-full lg:w-1/2 space-y-6">
+                <!-- Main Image Carousel (Swiper) -->
+                <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/20 to-transparent z-10"></div>
+                    <div class="swiper luxury-slider relative">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{ asset('asset/deluxe/deluxe-1.jpg') }}" alt="Hotel Detail 1"
+                                    class="w-full h-[500px] object-cover" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('asset/deluxe/deluxe-2.jpg') }}" alt="Hotel Detail 2"
+                                    class="w-full h-[500px] object-cover" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('asset/deluxe/deluxe-3.jpg') }}" alt="Hotel Detail 3"
+                                    class="w-full h-[500px] object-cover" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('asset/deluxe/deluxe-4.jpg') }}" alt="Hotel Detail 4"
+                                    class="w-full h-[500px] object-cover" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('asset/deluxe/deluxe-5.jpg') }}" alt="Hotel Detail 5"
+                                    class="w-full h-[500px] object-cover" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{ asset('asset/deluxe/deluxe-6.jpg') }}" alt="Hotel Detail 6"
+                                    class="w-full h-[500px] object-cover" />
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Arrows -->
-                        <div
-                            class="swiper-button-prev !text-white !font-bold !w-12 !h-12 !bg-[#8B4513]/80 rounded-full flex items-center justify-center shadow-lg hover:bg-[#8B4513] z-50">
-                        </div>
-                        <div
-                            class="swiper-button-next !text-white !font-bold !w-12 !h-12 !bg-[#8B4513]/80 rounded-full flex items-center justify-center shadow-lg hover:bg-[#8B4513] z-50">
-                        </div>
+                    <!-- Arrows -->
+                    <div
+                        class="swiper-button-prev !text-white !font-bold !w-12 !h-12 !bg-[#8B4513]/80 rounded-full flex items-center justify-center shadow-lg hover:bg-[#8B4513] z-50">
+                    </div>
+                    <div
+                        class="swiper-button-next !text-white !font-bold !w-12 !h-12 !bg-[#8B4513]/80 rounded-full flex items-center justify-center shadow-lg hover:bg-[#8B4513] z-50">
+                    </div>
 
-                        <!-- Pagination (with brown color dots) -->
-                        <div class="swiper-pagination absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20"></div>
+                    <!-- Pagination (with brown color dots) -->
+                    <div class="swiper-pagination absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20"></div>
 
-                        <!-- Floating Badge -->
-                        <div
-                            class="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg z-20">
-                            <span class="text-[#1a1a2e] font-semibold">Est. 2024</span>
-                        </div>
+                    <!-- Floating Badge -->
+                    <div
+                        class="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg z-20">
+                        <span class="text-[#1a1a2e] font-semibold">Est. 2024</span>
                     </div>
                 </div>
+            </div>
 
                 <!-- Content Section -->
                 <div class="w-full lg:w-1/2 space-y-8">

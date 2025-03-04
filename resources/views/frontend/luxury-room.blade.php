@@ -64,19 +64,27 @@
                         <div class="swiper luxury-slider relative">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('asset/images/s1.jpg') }}" alt="Hotel Krinoscco Main"
+                                    <img src="{{ asset('asset/luxury/luxury-1.jpg') }}" alt="Hotel Detail 1"
                                         class="w-full h-[500px] object-cover" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('asset/images/s2.jpg') }}" alt="Hotel Detail 1"
+                                    <img src="{{ asset('asset/luxury/luxury-2.jpg') }}" alt="Hotel Detail 2"
                                         class="w-full h-[500px] object-cover" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('asset/images/suite3.jpg') }}" alt="Hotel Detail 2"
+                                    <img src="{{ asset('asset/luxury/luxury-3.jpg') }}" alt="Hotel Detail 3"
                                         class="w-full h-[500px] object-cover" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('asset/images/s3.jpg') }}" alt="Hotel Detail 3"
+                                    <img src="{{ asset('asset/luxury/luxury-4.jpg') }}" alt="Hotel Detail 4"
+                                        class="w-full h-[500px] object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('asset/luxury/luxury-5.jpg') }}" alt="Hotel Detail 5"
+                                        class="w-full h-[500px] object-cover" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('asset/luxury/luxury-6.jpg') }}" alt="Hotel Detail 6"
                                         class="w-full h-[500px] object-cover" />
                                 </div>
                             </div>
