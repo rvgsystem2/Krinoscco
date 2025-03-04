@@ -1,6 +1,25 @@
 @extends('components.main')
 
 @section('content')
+    <!-- Add this CSS to style the pagination dots brown -->
+    <style>
+        .swiper-pagination-bullet {
+            background-color: #8B4513 !important;
+            /* Brown color for dots */
+            width: 12px;
+            height: 12px;
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #8B4513 !important;
+            /* Brown color for active dot */
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    </style>
+    
     <!-- Hero Section -->
     <div class="relative bg-gradient-to-b from-[#2c3e50] to-[#8B4513] text-white py-20 px-4">
         <!-- Overlay Background (Optional) -->
@@ -36,6 +55,7 @@
 
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center gap-16 relative">
+
                 <!-- Image Section with Auto Slider -->
                 <div class="w-full lg:w-1/2 space-y-6">
                     <!-- Main Image Carousel (Swiper) -->
@@ -60,9 +80,8 @@
                                         class="w-full h-[500px] object-cover" />
                                 </div>
                             </div>
-
-
                         </div>
+
                         <!-- Arrows -->
                         <div
                             class="swiper-button-prev !text-white !font-bold !w-12 !h-12 !bg-[#8B4513]/80 rounded-full flex items-center justify-center shadow-lg hover:bg-[#8B4513] z-50">
@@ -71,8 +90,9 @@
                             class="swiper-button-next !text-white !font-bold !w-12 !h-12 !bg-[#8B4513]/80 rounded-full flex items-center justify-center shadow-lg hover:bg-[#8B4513] z-50">
                         </div>
 
-                        <!-- Pagination -->
+                        <!-- Pagination (with brown color dots) -->
                         <div class="swiper-pagination absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20"></div>
+
                         <!-- Floating Badge -->
                         <div
                             class="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg z-20">
@@ -145,9 +165,8 @@
                         </div>
                     </div>
                 </div>
+
             </div>
-
-
 
             <!-- Room Features -->
             <div class="space-y-6 py-12">
@@ -219,6 +238,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
