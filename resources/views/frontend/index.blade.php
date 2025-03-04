@@ -109,6 +109,37 @@
         }
     </style>
 
+    <style>
+        .room-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+            pointer-events: none;
+        }
+
+        .room-image.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .room-tab {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.2);
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .room-tab.active-tab {
+            background: linear-gradient(90deg, #8B4513, #D4A017);
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+
     <!-- Hero Section with Video Background -->
     <section class="relative h-screen overflow-hidden">
         <!-- Video Background with improved loading -->
@@ -280,142 +311,107 @@
     </section>
 
 
-    <!-- Interactive Room Explorer -->
+    <!-- Explore Our Rooms -->
     <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e] relative overflow-hidden">
         <!-- Decorative Elements -->
         <div class="absolute top-0 right-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-[100px]"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-[100px]"></div>
 
         <div class="container mx-auto px-4 relative z-10">
-            <!-- Enhanced Header -->
-            <h2 class="text-5xl font-bold text-white mb-16 text-center">
+            <h2 class="text-5xl font-bold text-white mb-12 text-center">
                 Explore Our Rooms
                 <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
-                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">Experience luxury reimagined through interactive
-                    virtual tours</p>
+                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">Step into luxury with a visual preview of our
+                    premium rooms.</p>
             </h2>
 
-            <!-- Main Content Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <!-- 3D Viewer Section -->
+                <!-- Image Viewer with Tabs -->
                 <div class="space-y-8">
-                    <div class="bg-[#16213e] rounded-2xl h-[500px] relative overflow-hidden shadow-2xl group">
-
-                        <!-- Room Images (Swappable) -->
-                        <div id="bedroomImage" class="room-image">
-                            <img src="{{ asset('asset/images/s1.jpg') }}" class="w-full h-full object-cover">
+                    <div class="bg-[#0f172a] rounded-2xl h-[500px] relative overflow-hidden shadow-xl">
+                        <!-- Room Images -->
+                        <div class="room-image" id="bedroomImage">
+                            <img src="{{ asset('asset/images/s1.jpg') }}"
+                                class="w-full h-full object-cover transition-opacity duration-700">
                         </div>
-                        <div id="bathroomImage" class="room-image hidden">
-                            <img src="{{ asset('asset/images/suite8.jpg') }}" class="w-full h-full object-cover">
+                        <div class="room-image" id="bathroomImage">
+                            <img src="{{ asset('asset/images/suite8.jpg') }}"
+                                class="w-full h-full object-cover transition-opacity duration-700">
                         </div>
-                        <div id="livingareaImage" class="room-image hidden">
-                            <img src="{{ asset('asset/images/suite10.jpg') }}" class="w-full h-full object-cover">
-                        </div>
-
-                        <!-- Interactive Controls -->
-                        <div class="absolute top-4 right-4 flex space-x-3">
-                            <button
-                                class="p-3 bg-black/50 rounded-full backdrop-blur-sm hover:bg-[#8B4513] transition-colors duration-300">
-                                <i class="fas fa-vr-cardboard text-white text-xl"></i>
-                            </button>
-                            <button
-                                class="p-3 bg-black/50 rounded-full backdrop-blur-sm hover:bg-[#8B4513] transition-colors duration-300">
-                                <i class="fas fa-expand-arrows-alt text-white text-xl"></i>
-                            </button>
+                        <div class="room-image" id="livingareaImage">
+                            <img src="{{ asset('asset/images/suite10.jpg') }}"
+                                class="w-full h-full object-cover transition-opacity duration-700">
                         </div>
 
-                        <!-- Information Overlay -->
-                        <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 to-transparent">
-                            <h3 class="text-2xl font-bold text-white mb-3">Interactive Room Preview</h3>
-                            <p class="text-gray-300 flex items-center">
-                                <i class="fas fa-mouse mr-2"></i>
-                                Drag to explore in 360°
-                            </p>
-                            <!-- Room Navigation -->
-                            <div class="flex space-x-4 mt-4">
+                        <!-- Tab Navigation -->
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/70 p-4 rounded-t-2xl">
+                            <div class="flex justify-center space-x-6">
                                 <button onclick="showRoom('bedroom', this)"
-                                    class="room-tab px-4 py-2 rounded-lg transition-colors duration-300 text-white text-sm">
+                                    class="room-tab px-5 py-2 rounded-full text-white font-medium transition-all duration-300">
                                     Bedroom
                                 </button>
                                 <button onclick="showRoom('bathroom', this)"
-                                    class="room-tab px-4 py-2 rounded-lg transition-colors duration-300 text-white text-sm">
+                                    class="room-tab px-5 py-2 rounded-full text-white font-medium transition-all duration-300">
                                     Bathroom
                                 </button>
                                 <button onclick="showRoom('livingarea', this)"
-                                    class="room-tab px-4 py-2 rounded-lg transition-colors duration-300 text-white text-sm">
+                                    class="room-tab px-5 py-2 rounded-full text-white font-medium transition-all duration-300">
                                     Living Area
                                 </button>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Progress Bar -->
-                    <div class="bg-[#16213e] p-6 rounded-xl">
-                        <div class="flex justify-between text-gray-400 mb-2">
-                            <span>Loading 3D Model</span>
-                            <span>78%</span>
-                        </div>
-                        <div class="h-2 bg-gray-700 rounded-full">
-                            <div class="h-full w-[78%] bg-gradient-to-r from-[#8B4513] to-[#D4A017] rounded-full"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Features Section -->
                 <div class="space-y-6">
-                    <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl backdrop-blur-lg border border-white/5">
-                        <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
-                            <i class="fas fa-star text-[#8B4513] mr-3"></i>
-                            Premium Room Features
-                        </h3>
+                    <div class="bg-[#16213e] p-8 rounded-xl shadow-xl backdrop-blur-lg border border-white/10">
+                        <h3 class="text-3xl font-bold text-white mb-6">Premium Room Features</h3>
                         <ul class="space-y-6 text-gray-300">
-                            <li class="flex items-center transform hover:translate-x-2 transition-transform duration-300">
-                                <div class="w-12 h-12 bg-[#8B4513]/20 rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-bed text-[#8B4513] text-xl"></i>
+                            <li class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-[#8B4513]/20 flex items-center justify-center rounded-full">
+                                    <i class="fas fa-bed text-[#D4A017] text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-white">Smart Bed System</h4>
-                                    <p class="text-sm text-gray-400">Adjustable firmness with ambient lighting control</p>
+                                    <h4 class="text-white font-semibold">Smart Bed System</h4>
+                                    <p class="text-sm text-gray-400">Adjustable firmness with ambient lighting control.</p>
                                 </div>
                             </li>
-                            <li class="flex items-center transform hover:translate-x-2 transition-transform duration-300">
-                                <div class="w-12 h-12 bg-[#8B4513]/20 rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-tablet-alt text-[#8B4513] text-xl"></i>
+                            <li class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-[#8B4513]/20 flex items-center justify-center rounded-full">
+                                    <i class="fas fa-tablet-alt text-[#D4A017] text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-white">Room Automation</h4>
-                                    <p class="text-sm text-gray-400">Voice-controlled environment and entertainment</p>
+                                    <h4 class="text-white font-semibold">Room Automation</h4>
+                                    <p class="text-sm text-gray-400">Control the entire room with voice commands.</p>
                                 </div>
                             </li>
-                            <li class="flex items-center transform hover:translate-x-2 transition-transform duration-300">
-                                <div class="w-12 h-12 bg-[#8B4513]/20 rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-bath text-[#8B4513] text-xl"></i>
+                            <li class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-[#8B4513]/20 flex items-center justify-center rounded-full">
+                                    <i class="fas fa-bath text-[#D4A017] text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-white">Digital Shower</h4>
-                                    <p class="text-sm text-gray-400">Customizable temperature and pressure settings</p>
+                                    <h4 class="text-white font-semibold">Luxury Bathroom</h4>
+                                    <p class="text-sm text-gray-400">Digital shower with customizable settings.</p>
                                 </div>
                             </li>
                         </ul>
 
                         <!-- Room Specifications -->
-                        <div class="grid grid-cols-2 gap-4 mt-8 p-4 bg-black/20 rounded-lg">
-                            <div class="text-center p-3">
-                                <div class="text-[#8B4513] text-xl font-bold">45m²</div>
+                        <div class="mt-8 grid grid-cols-2 gap-4 bg-black/20 p-4 rounded-lg">
+                            <div class="text-center">
+                                <div class="text-[#D4A017] font-bold text-xl">45m²</div>
                                 <div class="text-gray-400 text-sm">Room Size</div>
                             </div>
-                            <div class="text-center p-3">
-                                <div class="text-[#8B4513] text-xl font-bold">4</div>
+                            <div class="text-center">
+                                <div class="text-[#D4A017] font-bold text-xl">4</div>
                                 <div class="text-gray-400 text-sm">Max Guests</div>
                             </div>
                         </div>
 
                         <a href="#booking"
-                            class="w-full mt-8 py-4 text-white text-center font-semibold rounded-lg
-                        bg-gradient-to-r from-[#8B4513] to-[#D4A017]
-                        hover:from-[#D4A017] hover:to-[#8B4513]
-                        transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-[#D4A017]/50
-                        block">
+                            class="mt-6 block py-4 text-center font-semibold rounded-lg bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white
+                            hover:from-[#D4A017] hover:to-[#8B4513] transition-all transform hover:scale-105">
                             Book This Room
                         </a>
                     </div>
@@ -424,35 +420,6 @@
         </div>
     </section>
 
-    <style>
-        .room-image {
-            display: none;
-        }
-
-        .room-image.active {
-            display: block;
-        }
-
-        .room-tab {
-            background-color: rgba(255, 255, 255, 0.1);
-            cursor: pointer;
-        }
-
-        .room-tab.active-tab {
-            background-color: #8B4513;
-            font-weight: bold;
-        }
-    </style>
-
-    <script>
-        function showRoom(room, button) {
-            document.querySelectorAll('.room-image').forEach(el => el.classList.remove('active'));
-            document.getElementById(room + 'Image').classList.add('active');
-            document.querySelectorAll('.room-tab').forEach(tab => tab.classList.remove('active-tab'));
-            button.classList.add('active-tab');
-        }
-        document.addEventListener('DOMContentLoaded', () => document.querySelector('.room-tab').click());
-    </script>
 
     <!-- Smart Services Section -->
     <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e] relative overflow-hidden">
@@ -1173,6 +1140,23 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function showRoom(room, button) {
+            // Remove active from all images
+            document.querySelectorAll('.room-image').forEach(el => el.classList.remove('active'));
+            document.getElementById(room + 'Image').classList.add('active');
+
+            // Remove active from all tabs
+            document.querySelectorAll('.room-tab').forEach(tab => tab.classList.remove('active-tab'));
+            button.classList.add('active-tab');
+        }
+
+        // Ensure Bedroom tab and image are active on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            showRoom('bedroom', document.querySelectorAll('.room-tab')[0]);
+        });
+    </script>
 
     <!--About Us JavaScript for Image Change -->
     <script>
