@@ -19,7 +19,7 @@
             transform: scale(1.2);
         }
     </style>
-    
+
     <!-- Hero Section -->
     <div class="relative bg-gradient-to-b from-[#2c3e50] to-[#8B4513] text-white py-20 px-4">
         <!-- Overlay Background (Optional) -->
