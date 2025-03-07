@@ -705,99 +705,114 @@
 
 
     <!-- Our Signature Offerings -->
-    <section class="py-20 bg-[#f7f7f7]">
+    <section class="py-24 bg-[#f7f7f7]">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold text-[#1a1a2e] mb-4">
+            <h2 class="text-5xl font-extrabold text-[#1a1a2e] mb-6 tracking-wide leading-tight">
                 Our Signature Offerings
             </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
-            <p class="text-lg text-gray-700 mb-16 mt-4">
+            <div class="w-28 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mb-6 rounded-full"></div>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-16 leading-relaxed">
                 Step into an oasis of elegance and warmth at Hotel Krinoscco, where luxury meets tradition to redefine your
                 unforgettable experience.
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <!-- Offering 1 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Offering Item (Repeat for all) -->
                 <div
-                    class="offering-item p-6 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    <div class="bg-[#8B4513] p-4 rounded-full mb-4 mx-auto">
+                    class="offering-item p-6 bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-[#8B4513] to-[#D4A017] flex items-center justify-center rounded-full mb-6 mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                         <span class="material-icons text-white text-3xl">key</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-2">Keycard Access</h3>
-                    <p class="text-gray-600">Access to all rooms with a secure keycard for your convenience and safety.</p>
+                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-3">Keycard Access</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Access to all rooms with a secure keycard for your convenience and safety.
+                    </p>
                 </div>
 
-                <!-- Offering 2 -->
                 <div
-                    class="offering-item p-6 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    <div class="bg-[#8B4513] p-4 rounded-full mb-4 mx-auto">
+                    class="offering-item p-6 bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-[#8B4513] to-[#D4A017] flex items-center justify-center rounded-full mb-6 mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                         <span class="material-icons text-white text-3xl">wifi</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-2">Internet Access</h3>
-                    <p class="text-gray-600">Stay connected with high-speed internet access throughout the property.</p>
+                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-3">Internet Access</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Stay connected with high-speed internet access throughout the property.
+                    </p>
                 </div>
 
-                <!-- Offering 3 -->
                 <div
-                    class="offering-item p-6 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    <div class="bg-[#8B4513] p-4 rounded-full mb-4 mx-auto">
+                    class="offering-item p-6 bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-[#8B4513] to-[#D4A017] flex items-center justify-center rounded-full mb-6 mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                         <span class="material-icons text-white text-3xl">phone</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-2">Telephone with Intercom</h3>
-                    <p class="text-gray-600">Stay in touch with hotel staff at any time with our telephone and intercom
-                        system.</p>
+                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-3">Telephone with Intercom</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Stay in touch with hotel staff at any time with our telephone and intercom system.
+                    </p>
                 </div>
 
-                <!-- Offering 4 -->
                 <div
-                    class="offering-item p-6 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    <div class="bg-[#8B4513] p-4 rounded-full mb-4 mx-auto">
+                    class="offering-item p-6 bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-[#8B4513] to-[#D4A017] flex items-center justify-center rounded-full mb-6 mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                         <span class="material-icons text-white text-3xl">access_alarm</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-2">24/7 Accessibility</h3>
-                    <p class="text-gray-600">Our services are available around the clock to cater to your needs.</p>
+                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-3">24/7 Accessibility</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our services are available around the clock to cater to your needs.
+                    </p>
                 </div>
 
-                <!-- Offering 5 -->
+                <!-- Add the rest of your items in the same format -->
                 <div
-                    class="offering-item p-6 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    <div class="bg-[#8B4513] p-4 rounded-full mb-4 mx-auto">
+                    class="offering-item p-6 bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-[#8B4513] to-[#D4A017] flex items-center justify-center rounded-full mb-6 mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                         <span class="material-icons text-white text-3xl">bathtub</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-2">Ensuite Bathroom</h3>
-                    <p class="text-gray-600">Each room comes with a private ensuite bathroom for ultimate comfort.</p>
+                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-3">Ensuite Bathroom</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Each room comes with a private ensuite bathroom for ultimate comfort.
+                    </p>
                 </div>
 
-                <!-- Offering 6 -->
                 <div
-                    class="offering-item p-6 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    <div class="bg-[#8B4513] p-4 rounded-full mb-4 mx-auto">
+                    class="offering-item p-6 bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-[#8B4513] to-[#D4A017] flex items-center justify-center rounded-full mb-6 mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                         <span class="material-icons text-white text-3xl">tv</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-2">Entertainment</h3>
-                    <p class="text-gray-600">Enjoy various entertainment options during your stay, including TV, music, and
-                        more.</p>
+                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-3">Entertainment</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Enjoy various entertainment options during your stay, including TV, music, and more.
+                    </p>
                 </div>
 
-                <!-- Offering 7 -->
                 <div
-                    class="offering-item p-6 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    <div class="bg-[#8B4513] p-4 rounded-full mb-4 mx-auto">
+                    class="offering-item p-6 bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-[#8B4513] to-[#D4A017] flex items-center justify-center rounded-full mb-6 mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                         <span class="material-icons text-white text-3xl">room_service</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-2">Room Service</h3>
-                    <p class="text-gray-600">Enjoy 24/7 room service for meals, beverages, and more, delivered right to
-                        your door.</p>
+                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-3">Room Service</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Enjoy 24/7 room service for meals, beverages, and more, delivered right to your door.
+                    </p>
                 </div>
 
-                <!-- Offering 8 -->
                 <div
-                    class="offering-item p-6 bg-white rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
-                    <div class="bg-[#8B4513] p-4 rounded-full mb-4 mx-auto">
+                    class="offering-item p-6 bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-tr from-[#8B4513] to-[#D4A017] flex items-center justify-center rounded-full mb-6 mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform">
                         <span class="material-icons text-white text-3xl">storage</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-2">Storage Space</h3>
-                    <p class="text-gray-600">Keep your belongings safe with ample storage space available in your room.</p>
+                    <h3 class="text-xl font-semibold text-[#1a1a2e] mb-3">Storage Space</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Keep your belongings safe with ample storage space available in your room.
+                    </p>
                 </div>
             </div>
         </div>
@@ -1083,7 +1098,7 @@
         </div>
     </section>
 
-    
+
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-gradient-to-b from-[#F8F8F8] to-[#EAEAEA]">
         <div class="container mx-auto px-6">
