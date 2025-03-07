@@ -818,6 +818,7 @@
         </div>
     </section>
 
+    
     @include('components.booking')
 
     <!-- Our Accommodation Section -->
