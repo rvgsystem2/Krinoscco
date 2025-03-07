@@ -588,6 +588,7 @@
         </div>
     </section>
 
+
     <!-- Immersive Experiences Section -->
     <section class="py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
         <!-- Decorative background elements -->
@@ -878,6 +879,7 @@
         </div>
     </section>
 
+
     <!-- Our Packages Section -->
     <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e]">
         <div class="container mx-auto px-4 text-center">
@@ -969,6 +971,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- What Our Guests Say -->
     @include('components.testimonial')
@@ -1080,6 +1083,7 @@
         </div>
     </section>
 
+    
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-gradient-to-b from-[#F8F8F8] to-[#EAEAEA]">
         <div class="container mx-auto px-6">
