@@ -37,7 +37,8 @@
                 <!-- Job Position 1 -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <h3 class="text-2xl font-bold text-white mb-4">Front Desk Manager</h3>
-                    <p class="text-gray-300 mb-6">Deliver exceptional guest service while managing front desk operations seamlessly.</p>
+                    <p class="text-gray-300 mb-6">Deliver exceptional guest service while managing front desk operations
+                        seamlessly.</p>
                     <ul class="text-gray-400 mb-6 space-y-2">
                         <li>• Excellent communication skills</li>
                         <li>• Prior experience in hospitality</li>
@@ -52,7 +53,8 @@
                 <!-- Job Position 2 -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <h3 class="text-2xl font-bold text-white mb-4">Housekeeping Supervisor</h3>
-                    <p class="text-gray-300 mb-6">Oversee the housekeeping team to ensure top-notch cleanliness and guest satisfaction.</p>
+                    <p class="text-gray-300 mb-6">Oversee the housekeeping team to ensure top-notch cleanliness and guest
+                        satisfaction.</p>
                     <ul class="text-gray-400 mb-6 space-y-2">
                         <li>• Attention to detail</li>
                         <li>• Leadership qualities</li>
@@ -67,7 +69,8 @@
                 <!-- Job Position 3 -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
                     <h3 class="text-2xl font-bold text-white mb-4">Chef de Cuisine</h3>
-                    <p class="text-gray-300 mb-6">Lead the culinary team and craft exquisite dishes to delight our guests.</p>
+                    <p class="text-gray-300 mb-6">Lead the culinary team and craft exquisite dishes to delight our guests.
+                    </p>
                     <ul class="text-gray-400 mb-6 space-y-2">
                         <li>• Creative and innovative mindset</li>
                         <li>• Expertise in international cuisines</li>
@@ -100,7 +103,8 @@
                 <!-- Benefit 2 -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl text-white">
                     <h3 class="text-2xl font-bold mb-4">Employee Benefits</h3>
-                    <p class="text-gray-300">Enjoy comprehensive benefits, including health insurance and leave policies.</p>
+                    <p class="text-gray-300">Enjoy comprehensive benefits, including health insurance and leave policies.
+                    </p>
                 </div>
 
                 <!-- Benefit 3 -->
@@ -112,7 +116,8 @@
                 <!-- Benefit 4 -->
                 <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl text-white">
                     <h3 class="text-2xl font-bold mb-4">Exciting Challenges</h3>
-                    <p class="text-gray-300">Engage in roles that keep you motivated and help shape the future of hospitality.</p>
+                    <p class="text-gray-300">Engage in roles that keep you motivated and help shape the future of
+                        hospitality.</p>
                 </div>
             </div>
         </div>
@@ -126,24 +131,32 @@
             </h2>
             <div class="space-y-8 max-w-4xl mx-auto">
                 <div class="flex items-start space-x-4">
-                    <div class="bg-[#8B4513] text-white rounded-full h-10 w-10 flex items-center justify-center font-bold">1</div>
+                    <div class="bg-[#8B4513] text-white rounded-full h-10 w-10 flex items-center justify-center font-bold">1
+                    </div>
                     <div>
                         <h3 class="text-lg font-medium text-gray-800">Prepare Your Resume</h3>
-                        <p class="text-gray-700">Ensure your resume highlights your skills, experience, and achievements relevant to the role.</p>
+                        <p class="text-gray-700">Ensure your resume highlights your skills, experience, and achievements
+                            relevant to the role.</p>
                     </div>
                 </div>
                 <div class="flex items-start space-x-4">
-                    <div class="bg-[#8B4513] text-white rounded-full h-10 w-10 flex items-center justify-center font-bold">2</div>
+                    <div class="bg-[#8B4513] text-white rounded-full h-10 w-10 flex items-center justify-center font-bold">2
+                    </div>
                     <div>
                         <h3 class="text-lg font-medium text-gray-800">Submit Your Application</h3>
-                        <p class="text-gray-700">Use our application form or email us at <a href="mailto:careers@example.com" class="text-[#8B4513] hover:underline">careers@example.com</a> to apply.</p>
+                        <p class="text-gray-700">Use our application form or email us at <a
+                                href="mailto:careers@krinoscco.com"
+                                class="text-[#8B4513] hover:underline">careers@krinoscco.com
+                            </a> to apply.</p>
                     </div>
                 </div>
                 <div class="flex items-start space-x-4">
-                    <div class="bg-[#8B4513] text-white rounded-full h-10 w-10 flex items-center justify-center font-bold">3</div>
+                    <div class="bg-[#8B4513] text-white rounded-full h-10 w-10 flex items-center justify-center font-bold">3
+                    </div>
                     <div>
                         <h3 class="text-lg font-medium text-gray-800">Interview Process</h3>
-                        <p class="text-gray-700">Our team will review your application and schedule interviews to assess your skills and fit for the role.</p>
+                        <p class="text-gray-700">Our team will review your application and schedule interviews to assess
+                            your skills and fit for the role.</p>
                     </div>
                 </div>
             </div>
