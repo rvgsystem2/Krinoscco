@@ -450,32 +450,33 @@
 
             <!-- Service Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- AI Concierge Card -->
+
+                <!-- Concierge Service Card -->
                 <div
                     class="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] p-8 rounded-xl border border-white/5 shadow-xl group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                     <div class="mb-6 relative">
                         <div
                             class="w-16 h-16 bg-[#8B4513]/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-robot text-[#8B4513] text-3xl"></i>
+                            <i class="fas fa-concierge-bell text-[#8B4513] text-3xl"></i>
                         </div>
                         <div class="absolute -top-2 -right-2 bg-[#8B4513] text-white text-xs px-2 py-1 rounded-full">24/7
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">AI Concierge</h3>
-                    <p class="text-gray-300 mb-6">24/7 virtual assistance powered by advanced AI to cater to all your needs
-                        instantly</p>
+                    <h3 class="text-2xl font-bold text-white mb-4">Concierge Services</h3>
+                    <p class="text-gray-300 mb-6">Experience world-class hospitality with our 24/7 concierge, ready to
+                        assist with dining reservations, local tips, and personalized services to enhance your stay.</p>
                     <ul class="space-y-3 text-sm text-gray-400 mb-6">
                         <li class="flex items-center">
                             <i class="fas fa-check text-[#8B4513] mr-2"></i>
-                            Instant response time
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-[#8B4513] mr-2"></i>
-                            Multi-language support
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-[#8B4513] mr-2"></i>
                             Personalized recommendations
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#8B4513] mr-2"></i>
+                            Transportation assistance
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#8B4513] mr-2"></i>
+                            Multilingual support
                         </li>
                     </ul>
                     <a href="#"
@@ -496,8 +497,8 @@
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Smart Room Control</h3>
-                    <p class="text-gray-300 mb-6">Control your entire room environment with voice commands or our mobile
-                        app</p>
+                    <p class="text-gray-300 mb-6">Take control of your comfort with our smart room technology, allowing you
+                        to adjust your environment with ease.</p>
                     <ul class="space-y-3 text-sm text-gray-400 mb-6">
                         <li class="flex items-center">
                             <i class="fas fa-check text-[#8B4513] mr-2"></i>
@@ -530,7 +531,8 @@
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Digital Key</h3>
-                    <p class="text-gray-300 mb-6">Access your room and hotel facilities seamlessly with your smartphone</p>
+                    <p class="text-gray-300 mb-6">Unlock your room and hotel facilities effortlessly with your smartphone —
+                        no physical key required.</p>
                     <ul class="space-y-3 text-sm text-gray-400 mb-6">
                         <li class="flex items-center">
                             <i class="fas fa-check text-[#8B4513] mr-2"></i>
@@ -542,7 +544,7 @@
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check text-[#8B4513] mr-2"></i>
-                            Share access easily
+                            Easily share guest access
                         </li>
                     </ul>
                     <a href="#"
@@ -552,6 +554,7 @@
                             class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform duration-300"></i>
                     </a>
                 </div>
+
             </div>
 
             <!-- Features Counter -->
