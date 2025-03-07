@@ -807,62 +807,73 @@
     <!-- Our Accommodation Section -->
     <section class="py-20 bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e]">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-base md:text-5xl font-bold text-white mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 tracking-wide uppercase">
                 Our Accommodation
-                <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
             </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mb-8 rounded-full"></div>
 
-            <p class="text-lg text-gray-300 mb-12">Whether traveling for business or vacation, Hotel Krinoscco room sizes
-                are ideal. Classically styled with carefully chosen contemporary designed rooms with round-the-clock
-                services.</p>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+                Whether traveling for business or vacation, Hotel Krinoscco offers rooms thoughtfully designed for comfort
+                and luxury.
+                Experience classically styled rooms with contemporary touches, backed by round-the-clock service.
+            </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Standard Room -->
-                <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
-                    <div class="relative mb-6">
+
+                <!-- Standard Room Card -->
+                <div
+                    class="bg-[#16213e] p-8 rounded-2xl shadow-2xl border border-white/10 overflow-hidden group hover:shadow-3xl transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
                         <img src="{{ asset('asset/images/Standerd-room.jpg') }}" alt="Standard Room"
-                            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
+                            class="w-full h-52 object-cover transition-transform duration-500 transform group-hover:scale-110">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Standard Room</h3>
-                    <p class="text-gray-300 mb-6">The standard room has all the essential conveniences and is tastefully
-                        designed for your enjoyable stay. We are delivering the highest level of pleasure and a wonderful
-                        experience.</p>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Tastefully designed with essential conveniences, ensuring comfort and a memorable experience
+                        throughout your stay.
+                    </p>
                     <a href="{{ route('accommodation.standard') }}"
-                        class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
+                        class="inline-block bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
                 </div>
 
-                <!-- Deluxe Room -->
-                <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
-                    <div class="relative mb-6">
+                <!-- Deluxe Room Card -->
+                <div
+                    class="bg-[#16213e] p-8 rounded-2xl shadow-2xl border border-white/10 overflow-hidden group hover:shadow-3xl transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
                         <img src="{{ asset('asset/images/deluxe-room.jpg') }}" alt="Deluxe Room"
-                            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
+                            class="w-full h-52 object-cover transition-transform duration-500 transform group-hover:scale-110">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Deluxe Room</h3>
-                    <p class="text-gray-300 mb-6">Envision opulence in our Deluxe haven—where lavish comforts meet bespoke
-                        elegance, weaving a tapestry of indulgence for an unforgettable retreat.</p>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Experience bespoke elegance in our Deluxe Room—crafted for ultimate comfort, with lavish amenities
+                        and modern luxury.
+                    </p>
                     <a href="{{ route('accommodation.deluxe') }}"
-                        class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
+                        class="inline-block bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
                 </div>
 
-                <!-- Luxury Room -->
-                <div class="bg-[#16213e] p-8 rounded-xl shadow-2xl border border-white/5 overflow-hidden">
-                    <div class="relative mb-6">
-                        <img src="{{ asset('asset/images/luxury-room.jpg') }}" alt="Luxury Suite"
-                            class="w-full h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-lg">
+                <!-- Luxury Room Card -->
+                <div
+                    class="bg-[#16213e] p-8 rounded-2xl shadow-2xl border border-white/10 overflow-hidden group hover:shadow-3xl transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="{{ asset('asset/images/luxury-room.jpg') }}" alt="Luxury Room"
+                            class="w-full h-52 object-cover transition-transform duration-500 transform group-hover:scale-110">
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">
-                        Luxury Room</h3>
-                    <p class="text-gray-300 mb-6">Discover the epitome of grandeur in our Suite—a symphony of
-                        sophistication, where indulgence meets exclusivity for an unparalleled escape.</p>
+                    <h3 class="text-2xl font-bold text-white mb-4">Luxury Room</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        The epitome of grandeur and sophistication, our Luxury Room combines exclusivity and indulgence for
+                        a truly unforgettable escape.
+                    </p>
                     <a href="{{ route('accommodation.luxury') }}"
-                        class="bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
+                        class="inline-block bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
