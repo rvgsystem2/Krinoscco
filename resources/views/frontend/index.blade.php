@@ -818,7 +818,7 @@
         </div>
     </section>
 
-    
+
     @include('components.booking')
 
     <!-- Our Accommodation Section -->
@@ -996,58 +996,50 @@
     <!-- Contact Us -->
     <section class="bg-gray-100 py-16 relative overflow-hidden">
         <!-- Decorative Elements -->
-        <div class="absolute top-0 left-0 w-96 h-96 bg-[#D4A017]/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#8B4513]/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-0 left-0 w-72 h-72 sm:w-96 sm:h-96 bg-[#D4A017]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 sm:w-96 sm:h-96 bg-[#8B4513]/10 rounded-full blur-3xl"></div>
 
-        <div class="max-w-7xl mx-auto md:px-6 sm:px-8 lg:px-12 relative z-10">
+        <div class="relative z-10 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto">
             <!-- Heading Section -->
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-extrabold text-gray-900">Contact Us</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
-                <p class="mt-4 text-lg text-gray-600">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Contact Us</h2>
+                <div class="w-16 sm:w-24 h-1 bg-gradient-to-r from-[#8B4513] to-[#D4A017] mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-base sm:text-lg text-gray-600">
                     We’d love to hear from you! Reach out to us anytime.
                 </p>
             </div>
 
-            <!-- Grid Section -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Contact Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Contact Information -->
                 <div class="space-y-8">
                     <!-- Single Info -->
                     <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <span class="material-icons text-[#8B4513] text-4xl">location_on</span>
-                        </div>
+                        <span class="material-icons text-[#8B4513] text-3xl sm:text-4xl">location_on</span>
                         <div>
                             <h4 class="font-semibold text-gray-800 text-lg">Our Location</h4>
                             <p class="text-gray-600">Hotel Krinoscco, Amaniganj Ram Path, Ayodhya U.P Pin 224001</p>
                         </div>
                     </div>
-                    <!-- Single Info -->
+
                     <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <span class="material-icons text-[#8B4513] text-4xl">email</span>
-                        </div>
+                        <span class="material-icons text-[#8B4513] text-3xl sm:text-4xl">email</span>
                         <div>
                             <h4 class="font-semibold text-gray-800 text-lg">Email Us</h4>
                             <p class="text-gray-600">info@krinoscco.com</p>
                         </div>
                     </div>
-                    <!-- Single Info -->
+
                     <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <span class="material-icons text-[#8B4513] text-4xl">phone</span>
-                        </div>
+                        <span class="material-icons text-[#8B4513] text-3xl sm:text-4xl">phone</span>
                         <div>
                             <h4 class="font-semibold text-gray-800 text-lg">Call Us</h4>
                             <p class="text-gray-600">+91-7275002525</p>
                         </div>
                     </div>
-                    <!-- Timing Info -->
+
                     <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0">
-                            <span class="material-icons text-[#8B4513] text-4xl">access_time</span>
-                        </div>
+                        <span class="material-icons text-[#8B4513] text-3xl sm:text-4xl">access_time</span>
                         <div>
                             <h4 class="font-semibold text-gray-800 text-lg">Timing</h4>
                             <p class="text-gray-600">Check In: 1:00 PM</p>
@@ -1058,7 +1050,7 @@
 
                 <!-- Contact Form -->
                 <form action="#" method="POST"
-                    class="space-y-6 bg-white p-8 rounded-xl shadow-lg transition-transform duration-700 hover:shadow-2xl hover:-translate-y-2">
+                    class="bg-white p-6 sm:p-8 rounded-xl shadow-lg transition-transform duration-700 hover:shadow-2xl hover:-translate-y-2">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
                         <input type="text" name="name" id="name" required
@@ -1090,9 +1082,9 @@
             </div>
 
             <!-- Map Section -->
-            <div class="mt-16">
+            <div class="mt-12 sm:mt-16">
                 <iframe
-                    class="w-full h-80 rounded-lg shadow-lg transition-transform duration-700 hover:shadow-2xl hover:scale-105"
+                    class="w-full h-64 sm:h-80 lg:h-96 rounded-lg shadow-lg transition-transform duration-700 hover:shadow-2xl hover:scale-105"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.786563827908!2d82.162745675435!3d26.78307267672456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0796e56fb899%3A0xffa1558e88f0d349!2sHotel%20Krinoscco!5e0!3m2!1sen!2sin!4v1739181698814!5m2!1sen!2sin"
                     frameborder="0" allowfullscreen=""></iframe>
             </div>
