@@ -84,7 +84,8 @@
                 </div>
 
                 <!-- Contact Form -->
-                <form action="#" method="POST" class="space-y-6 bg-white p-8 rounded-xl shadow-lg transition-transform duration-700 hover:shadow-2xl hover:-translate-y-2">
+                <form action="#" method="POST"
+                    class="space-y-6 bg-white p-8 rounded-xl shadow-lg transition-transform duration-700 hover:shadow-2xl hover:-translate-y-2">
                     @csrf
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
@@ -120,8 +121,8 @@
             <div class="mt-16">
                 <h3 class="text-2xl font-bold text-gray-900 text-center mb-6">Find Us on the Map</h3>
                 <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14158.26218436891!2d82.13430905337832!3d26.76501683557068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0907c32a6d1f%3A0xf5e1e35db3028a26!2sAmaniganj%2C%20Faizabad%2C%20Uttar%20Pradesh%20224001!5e0!3m2!1sen!2sin!4v1711222345678"
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.786563827908!2d82.162745675435!3d26.78307267672456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0796e56fb899%3A0xffa1558e88f0d349!2sHotel%20Krinoscco!5e0!3m2!1sen!2sin!4v1739181698814!5m2!1sen!2sin"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
