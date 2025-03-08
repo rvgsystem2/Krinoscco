@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -47,3 +48,6 @@ Route::get('/miscelleneous', [HomeController::class, 'miscelleneous'])->name('mi
 Route::get('/details', [HomeController::class, 'details'])->name('details');
 Route::get('/information', [HomeController::class, 'information'])->name('information');
 Route::get('/policy', [HomeController::class, 'policy'])->name('policy');
+
+Route::post('/send-booking-email', [BookingController::class, 'sendBookingEmail'])->name('booking.send');
+Route::get('/thank-you', [BookingController::class, 'thankyou'])->name('thankyou');
