@@ -49,39 +49,40 @@
         </div>
     </div>
 
-    <!-- Booking Form Section -->
-    <div class="bg-gray-100 py-16 px-32 w-full">
-        <h2 class="text-4xl font-bold text-center text-gray-800 mb-6">Book Your Package</h2>
-        <p class="text-center text-gray-600 mb-8">Fill out the form below to book your preferred package.</p>
-        <div class="w-full mx-auto">
-            <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-md">
-                <div class="mb-4">
-                    <label class="block text-gray-700">Full Name</label>
-                    <input type="text" class="w-full border-gray-300 p-2 rounded-lg" required>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700">Email</label>
-                    <input type="email" class="w-full border-gray-300 p-2 rounded-lg" required>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700">Phone Number</label>
-                    <input type="tel" class="w-full border-gray-300 p-2 rounded-lg" required>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700">Select Package</label>
-                    <select class="w-full border-gray-300 p-2 rounded-lg" required>
-                        <option value="basic">Basic Package</option>
-                        <option value="premium">Premium Package</option>
-                        <option value="luxury">Luxury Package</option>
-                    </select>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700">Preferred Date</label>
-                    <input type="date" class="w-full border-gray-300 p-2 rounded-lg" required>
-                </div>
-                <button class="bg-[#8B4513] text-white py-2 px-4 rounded-lg w-full hover:bg-gray-800">Submit
-                    Booking</button>
-            </form>
-        </div>
+    <!-- Booking Form -->
+    <div class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Book Your Package</h2>
+        <form action="" method="POST" class="w-full max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            @csrf
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone</label>
+                <input type="text" id="phone" name="phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+            </div>
+            <div class="mb-4">
+                <label for="package" class="block text-gray-700 font-semibold mb-2">Select Package</label>
+                <select id="package" name="package" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+                    <option value="Basic Package">Basic Package</option>
+                    <option value="Premium Package">Premium Package</option>
+                    <option value="Luxury Package">Luxury Package</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="date" class="block text-gray-700 font-semibold mb-2">Preferred Date</label>
+                <input type="date" id="date" name="date" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-gray-700 font-semibold mb-2">Additional Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-[#8B4513] text-white py-3 rounded-lg hover:bg-gray-800">Submit Booking</button>
+        </form>
     </div>
 @endsection
