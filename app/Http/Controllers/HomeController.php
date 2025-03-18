@@ -57,9 +57,9 @@ class HomeController extends Controller
         return view('frontend.deluxe-room');
     }
 
-    public function luxuryRoom()
+    public function suiteRoom()
     {
-        return view('frontend.luxury-room');
+        return view('frontend.suite-room');
     }
 
     // Banquets and Meetings Routes

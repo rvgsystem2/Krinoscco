@@ -31,7 +31,7 @@
         <!-- Content Inside the Hero Section -->
         <div class="relative container mx-auto text-center z-10">
             <!-- Title with Enhanced Focus -->
-            <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">Luxury Room</h1>
+            <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">Suite Room</h1>
 
             <!-- Description Text with Focus -->
             <p class="text-lg font-medium mb-6 text-[#bdc3c7] opacity-90 tracking-wide max-w-xl mx-auto">
@@ -104,7 +104,7 @@
                         <!-- Floating Badge -->
                         <div
                             class="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg z-20">
-                            <span class="text-[#1a1a2e] font-semibold">Est. 2024</span>
+                            <span class="text-[#1a1a2e] font-semibold">Est. 2021</span>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
                             <div class="w-20 h-[2px] bg-[#8B4513]"></div>
-                            <span class="text-[#8B4513] font-semibold uppercase tracking-wider">Luxury Room</span>
+                            <span class="text-[#8B4513] font-semibold uppercase tracking-wider">Suite Room</span>
                         </div>
                         <h2 class="text-4xl lg:text-5xl font-bold text-[#1a1a2e] leading-tight">
                             Where Every Moment

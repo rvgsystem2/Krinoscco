@@ -208,7 +208,7 @@
                         <!-- Floating Badge -->
                         <div
                             class="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg z-20">
-                            <span class="text-[#1a1a2e] font-semibold">Est. 2024</span>
+                            <span class="text-[#1a1a2e] font-semibold">Est. 2021</span>
                         </div>
                     </div>
 
@@ -880,12 +880,12 @@
                         <img src="{{ asset('asset/images/luxury-room.jpg') }}" alt="Luxury Room"
                             class="w-full h-52 object-cover transition-transform duration-500 transform group-hover:scale-110">
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Luxury Room</h3>
+                    <h3 class="text-2xl font-bold text-white mb-4">Suite Room</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
                         The epitome of grandeur and sophistication, our Luxury Room combines exclusivity and indulgence for
                         a truly unforgettable escape.
                     </p>
-                    <a href="{{ route('accommodation.luxury') }}"
+                    <a href="{{ route('accommodation.suite') }}"
                         class="inline-block bg-[#8B4513] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#6B3410] transition-all duration-300 transform hover:scale-105">
                         Know More
                     </a>

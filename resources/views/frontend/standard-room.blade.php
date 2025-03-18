@@ -106,7 +106,7 @@
                         <!-- Floating Badge -->
                         <div
                             class="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg z-20">
-                            <span class="text-[#1a1a2e] font-semibold">Est. 2024</span>
+                            <span class="text-[#1a1a2e] font-semibold">Est. 2021</span>
                         </div>
                     </div>
                 </div>
