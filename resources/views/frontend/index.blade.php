@@ -331,15 +331,15 @@
                     <div class="bg-[#0f172a] rounded-2xl h-[500px] relative overflow-hidden shadow-xl">
                         <!-- Room Images -->
                         <div class="room-image" id="bedroomImage">
-                            <img src="{{ asset('asset/images/s1.jpg') }}"
+                            <img src="{{ asset('asset/luxury/luxury-3.jpg') }}"
                                 class="w-full h-full object-cover transition-opacity duration-700">
                         </div>
                         <div class="room-image" id="bathroomImage">
-                            <img src="{{ asset('asset/images/suite8.jpg') }}"
+                            <img src="{{ asset('asset/luxury/luxury-5.jpg') }}"
                                 class="w-full h-full object-cover transition-opacity duration-700">
                         </div>
                         <div class="room-image" id="livingareaImage">
-                            <img src="{{ asset('asset/images/suite10.jpg') }}"
+                            <img src="{{ asset('asset/luxury/luxury-7.jpg') }}"
                                 class="w-full h-full object-cover transition-opacity duration-700">
                         </div>
 
@@ -841,7 +841,7 @@
                 <div
                     class="bg-[#16213e] p-8 rounded-2xl shadow-2xl border border-white/10 overflow-hidden group hover:shadow-3xl transition-all duration-300">
                     <div class="relative overflow-hidden rounded-lg mb-6">
-                        <img src="{{ asset('asset/images/Standerd-room.jpg') }}" alt="Standard Room"
+                        <img src="{{ asset('asset/standard/standard-2.jpg') }}" alt="Standard Room"
                             class="w-full h-52 object-cover transition-transform duration-500 transform group-hover:scale-110">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Standard Room</h3>
@@ -859,7 +859,7 @@
                 <div
                     class="bg-[#16213e] p-8 rounded-2xl shadow-2xl border border-white/10 overflow-hidden group hover:shadow-3xl transition-all duration-300">
                     <div class="relative overflow-hidden rounded-lg mb-6">
-                        <img src="{{ asset('asset/images/deluxe-room.jpg') }}" alt="Deluxe Room"
+                        <img src="{{ asset('asset/deluxe/deluxe-5.jpg') }}" alt="Deluxe Room"
                             class="w-full h-52 object-cover transition-transform duration-500 transform group-hover:scale-110">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Deluxe Room</h3>
@@ -877,7 +877,7 @@
                 <div
                     class="bg-[#16213e] p-8 rounded-2xl shadow-2xl border border-white/10 overflow-hidden group hover:shadow-3xl transition-all duration-300">
                     <div class="relative overflow-hidden rounded-lg mb-6">
-                        <img src="{{ asset('asset/images/luxury-room.jpg') }}" alt="Luxury Room"
+                        <img src="{{ asset('asset/luxury/luxury-3.jpg') }}" alt="Luxury Room"
                             class="w-full h-52 object-cover transition-transform duration-500 transform group-hover:scale-110">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Suite Room</h3>
@@ -953,6 +953,16 @@
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="group relative">
+                    <img src="{{ asset('asset/images/Art-1.jpg') }}" alt="Abstract Harmony"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer transition-transform transform group-hover:scale-105"
+                        onclick="openModal('{{ asset('asset/images/Art-1.jpg') }}')">
+                </div>
+                <div class="group relative">
+                    <img src="{{ asset('asset/images/Art-2.jpg') }}" alt="Abstract Harmony"
+                        class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer transition-transform transform group-hover:scale-105"
+                        onclick="openModal('{{ asset('asset/images/Art-2.jpg') }}')">
+                </div>
                 <div class="group relative">
                     <img src="{{ asset('asset/images/d8.jpg') }}" alt="Abstract Harmony"
                         class="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer transition-transform transform group-hover:scale-105"
