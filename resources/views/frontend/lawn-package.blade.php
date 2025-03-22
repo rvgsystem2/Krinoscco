@@ -58,9 +58,7 @@
             <div class="p-6 text-center">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-3">Exclusive Lawn Package</h3>
                 <p class="text-gray-600">Enjoy a premium Lawn experience with elegant decor, lighting, and catering.</p>
-                <button class="mt-4 bg-[#8B4513] text-white py-3 px-8 rounded-lg hover:bg-gray-800 transition">
-                    Book Now
-                </button>
+             
             </div>
         </div>
     </div>
