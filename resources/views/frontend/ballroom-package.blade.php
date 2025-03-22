@@ -18,34 +18,52 @@
 
     <!-- Packages Section -->
     <div class="container mx-auto py-16 px-6">
-        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Ballroom Package</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="{{ asset('asset/images/suite10.jpg') }}" alt="Package 1"
-                    class="w-full h-56 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Basic Package</h3>
-                    <p class="text-gray-600">Includes lawn maintenance, trimming, and basic gardening.</p>
-                    <button class="mt-4 bg-[#8B4513] text-white py-2 px-4 rounded-lg hover:bg-gray-800">Book Now</button>
-                </div>
+        <div class="py-4">
+            <h2 class="text-4xl font-bold text-center text-gray-700 mb-4">
+                Our Ballroom Package
+            </h2>
+            <span class="block border-b-4 border-gray-700 w-1/6 mx-auto"></span>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+                <img src="{{ asset('asset/deluxe/deluxe-1.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/deluxe/deluxe-2.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/deluxe/deluxe-3.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/deluxe/deluxe-4.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/deluxe/deluxe-5.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/deluxe/deluxe-6.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/deluxe/deluxe-7.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/deluxe/deluxe-8.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="{{ asset('asset/images/suite11.jpg') }}" alt="Package 2" class="w-full h-56 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Premium Package</h3>
-                    <p class="text-gray-600">Includes everything in the basic package plus fertilization and irrigation.</p>
-                    <button class="mt-4 bg-[#8B4513] text-white py-2 px-4 rounded-lg hover:bg-gray-800">Book Now</button>
-                </div>
+
+            <div class="p-6 text-center">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Exclusive Ballroom Package</h3>
+                <p class="text-gray-600">Enjoy a premium ballroom experience with elegant decor, lighting, and catering.</p>
+                <button class="mt-4 bg-[#8B4513] text-white py-3 px-8 rounded-lg hover:bg-gray-800 transition">
+                    Book Now
+                </button>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="{{ asset('asset/images/suite12.jpg') }}" alt="Package 3"
-                    class="w-full h-56 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Luxury Package</h3>
-                    <p class="text-gray-600">Full lawn care service including landscaping and custom design.</p>
-                    <button class="mt-4 bg-[#8B4513] text-white py-2 px-4 rounded-lg hover:bg-gray-800">Book Now</button>
-                </div>
-            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 flex items-center justify-center hidden bg-black bg-opacity-75 z-50">
+        <div class="relative">
+            <button class="absolute top-2 right-2 text-white text-3xl" onclick="closeModal()">&times;</button>
+            <button id="prevBtn" class="absolute left-2 top-1/2 transform -translate-y-1/2 text-white text-3xl"
+                onclick="prevImage()">&#10094;</button>
+            <img id="modalImage" src="" class="max-w-full max-h-[80vh] rounded-lg shadow-lg">
+            <button id="nextBtn" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white text-3xl"
+                onclick="nextImage()">&#10095;</button>
         </div>
     </div>
 
@@ -56,19 +74,23 @@
             @csrf
             <div class="mb-4">
                 <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
-                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+                <input type="text" id="name" name="name" required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
             </div>
             <div class="mb-4">
                 <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+                <input type="email" id="email" name="email" required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
             </div>
             <div class="mb-4">
                 <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone</label>
-                <input type="text" id="phone" name="phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+                <input type="text" id="phone" name="phone" required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
             </div>
             <div class="mb-4">
                 <label for="package" class="block text-gray-700 font-semibold mb-2">Select Package</label>
-                <select id="package" name="package" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+                <select id="package" name="package" required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
                     <option value="Basic Package">Basic Package</option>
                     <option value="Premium Package">Premium Package</option>
                     <option value="Luxury Package">Luxury Package</option>
@@ -76,13 +98,48 @@
             </div>
             <div class="mb-4">
                 <label for="date" class="block text-gray-700 font-semibold mb-2">Preferred Date</label>
-                <input type="date" id="date" name="date" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
+                <input type="date" id="date" name="date" required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]">
             </div>
             <div class="mb-6">
                 <label for="message" class="block text-gray-700 font-semibold mb-2">Additional Message</label>
-                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]"></textarea>
+                <textarea id="message" name="message" rows="4"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8B4513]"></textarea>
             </div>
-            <button type="submit" class="w-full bg-[#8B4513] text-white py-3 rounded-lg hover:bg-gray-800">Submit Booking</button>
+            <button type="submit" class="w-full bg-[#8B4513] text-white py-3 rounded-lg hover:bg-gray-800">Submit
+                Booking</button>
         </form>
     </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        let images = document.querySelectorAll('.grid img');
+        let modalImage = document.getElementById('modalImage');
+        let modal = document.getElementById('imageModal');
+
+        function openModal(imgElement) {
+            let index = Array.from(images).indexOf(imgElement);
+            modalImage.dataset.index = index;
+            modalImage.src = imgElement.src;
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+        }
+
+        function prevImage() {
+            let currentIndex = parseInt(modalImage.dataset.index);
+            let newIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            modalImage.src = images[newIndex].src;
+            modalImage.dataset.index = newIndex;
+        }
+
+        function nextImage() {
+            let currentIndex = parseInt(modalImage.dataset.index);
+            let newIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            modalImage.src = images[newIndex].src;
+            modalImage.dataset.index = newIndex;
+        }
+    </script>
 @endsection
