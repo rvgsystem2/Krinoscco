@@ -37,21 +37,27 @@
 
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-                <img src="{{ asset('asset/deluxe/deluxe-1.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/lawn/lawn-1.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/deluxe/deluxe-2.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/lawn/lawn-2.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/deluxe/deluxe-3.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/lawn/lawn-3.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/deluxe/deluxe-4.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/lawn/lawn-4.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/deluxe/deluxe-5.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/lawn/lawn-5.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/deluxe/deluxe-6.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/lawn/lawn-6.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/deluxe/deluxe-7.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/lawn/lawn-7.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/deluxe/deluxe-8.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/lawn/lawn-8.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/lawn/lawn-9.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/lawn/lawn-10.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                    onclick="openModal(this)">
+                <img src="{{ asset('asset/lawn/lawn-11.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
             </div>
 
