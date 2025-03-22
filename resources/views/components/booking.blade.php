@@ -68,41 +68,49 @@
                 <!-- Adults -->
                 <div class="flex flex-col">
                     <label class="text-gray-700 font-medium">Adults</label>
-                    <select name="adults" required
+                    <select id="adults" name="adults" required
                         class="border border-gray-300 rounded-md p-2 bg-white outline-none
-                               focus:border-[#8B4513] focus:ring-2 focus:ring-[#8B4513]">
+                           focus:border-[#8B4513] focus:ring-2 focus:ring-[#8B4513]">
                         <option value="1">1 Adult</option>
                         <option value="2">2 Adults</option>
                         <option value="3">3 Adults</option>
-                        <option value="4">4 Adults</option>
                     </select>
                 </div>
 
                 <!-- Children -->
                 <div class="flex flex-col">
                     <label class="text-gray-700 font-medium">Children</label>
-                    <select name="children" required
+                    <select id="children" name="children" required
                         class="border border-gray-300 rounded-md p-2 bg-white outline-none
-                               focus:border-[#8B4513] focus:ring-2 focus:ring-[#8B4513]">
+                           focus:border-[#8B4513] focus:ring-2 focus:ring-[#8B4513]">
                         <option value="0">No Children</option>
                         <option value="1">1 Child</option>
                         <option value="2">2 Children</option>
-                        <option value="3">3 Children</option>
                     </select>
                 </div>
+
+
 
                 <!-- Rooms -->
                 <div class="flex flex-col">
                     <label class="text-gray-700 font-medium">Rooms</label>
-                    <select name="rooms" required
-                        class="border border-gray-300 rounded-md p-2 bg-white outline-none
-                               focus:border-[#8B4513] focus:ring-2 focus:ring-[#8B4513]">
-                        <option value="1">1 Room</option>
-                        <option value="2">2 Rooms</option>
-                        <option value="3">3 Rooms</option>
-                        <option value="4">4 Rooms</option>
-                    </select>
+                    <div
+                        class="flex items-center justify-between border border-gray-300 rounded-lg px-2 py-1 bg-white shadow-sm">
+                        <button type="button" id="decrease"
+                            class="p-1 px-4 bg-gray-400 text-white rounded-md hover:bg-gray-500 transition disabled:opacity-50"
+                            disabled>
+                            -
+                        </button>
+                        <input type="text" id="roomCount" name="rooms" value="1"
+                            class="w-8 text-center border-none outline-none bg-transparent font-semibold text-base"
+                            readonly>
+                        <button type="button" id="increase"
+                            class="p-1 px-4 bg-gray-400 text-white rounded-md hover:bg-gray-500 transition">
+                            +
+                        </button>
+                    </div>
                 </div>
+
 
                 <!-- Submit Button -->
                 <div class="col-span-1 sm:col-span-2 md:col-span-3 flex justify-center">
@@ -113,7 +121,7 @@
                     </button>
                 </div>
             </form>
-            
+
         </div>
     </div>
 </section>
@@ -137,5 +145,74 @@
             dateFormat: "Y-m-d",
             minDate: "today"
         });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const adultsDropdown = document.getElementById("adults");
+        const childrenDropdown = document.getElementById("children");
+
+        function updateChildrenOptions() {
+            let adults = parseInt(adultsDropdown.value, 10);
+
+            if (adults === 3) {
+                // If 3 adults are selected, disable children dropdown and set it to 0
+                childrenDropdown.value = "0";
+                childrenDropdown.disabled = true;
+            } else if (adults === 2) {
+                // If 2 adults are selected, allow 1 or 2 children
+                childrenDropdown.innerHTML = `
+                    <option value="0">No Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                `;
+                childrenDropdown.disabled = false;
+            } else {
+                // If 1 adult is selected, allow all options
+                childrenDropdown.innerHTML = `
+                    <option value="0">No Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                `;
+                childrenDropdown.disabled = false;
+            }
+        }
+
+        // Add event listener to Adults dropdown
+        adultsDropdown.addEventListener("change", updateChildrenOptions);
+
+        // Initialize on page load
+        updateChildrenOptions();
+    });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const roomInput = document.getElementById("roomCount");
+        const increaseBtn = document.getElementById("increase");
+        const decreaseBtn = document.getElementById("decrease");
+
+        function updateButtons() {
+            let value = parseInt(roomInput.value, 10);
+            decreaseBtn.disabled = value <= 1;
+        }
+
+        increaseBtn.addEventListener("click", function() {
+            let value = parseInt(roomInput.value, 10);
+            roomInput.value = value + 1;
+            updateButtons();
+        });
+
+        decreaseBtn.addEventListener("click", function() {
+            let value = parseInt(roomInput.value, 10);
+            if (value > 1) {
+                roomInput.value = value - 1;
+            }
+            updateButtons();
+        });
+
+        updateButtons();
     });
 </script>

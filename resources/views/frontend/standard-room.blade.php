@@ -85,10 +85,6 @@
                                     <img src="{{ asset('asset/standard/standard-5.jpg') }}" alt="Hotel Detail 5"
                                         class="w-full h-[500px] object-cover" />
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('asset/deluxe/deluxe-6.jpg') }}" alt="Hotel Detail 6"
-                                        class="w-full h-[500px] object-cover" />
-                                </div>
                             </div>
                         </div>
 
