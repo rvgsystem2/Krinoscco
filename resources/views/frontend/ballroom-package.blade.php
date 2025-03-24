@@ -25,7 +25,7 @@
             <span class="block border-b-4 border-gray-700 w-1/6 mx-auto"></span>
         </div>
 
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        {{-- <div class="bg-white shadow-lg rounded-lg overflow-hidden">
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
                 <img src="{{ url('asset/ballroom/ballroom-1.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
@@ -44,7 +44,42 @@
                 <p class="text-gray-600">Enjoy a premium ballroom experience with elegant decor, lighting, and catering.</p>
 
             </div>
+        </div> --}}
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+                <img src="{{ url('asset/ballroom/ballroom-1.jpg') }}" 
+                     alt="Ballroom Image 1" 
+                     class="w-full h-56 object-cover cursor-pointer" 
+                     onclick="openModal(this)" 
+                     loading="lazy">
+                <img src="{{ url('asset/ballroom/ballroom-2.jpg') }}" 
+                     alt="Ballroom Image 2" 
+                     class="w-full h-56 object-cover cursor-pointer" 
+                     onclick="openModal(this)" 
+                     loading="lazy">
+                <img src="{{ url('asset/ballroom/ballroom-3.jpg') }}" 
+                     alt="Ballroom Image 3" 
+                     class="w-full h-56 object-cover cursor-pointer" 
+                     onclick="openModal(this)" 
+                     loading="lazy">
+                <img src="{{ url('asset/ballroom/ballroom-4.jpg') }}" 
+                     alt="Ballroom Image 4" 
+                     class="w-full h-56 object-cover cursor-pointer" 
+                     onclick="openModal(this)" 
+                     loading="lazy">
+                <img src="{{ url('asset/ballroom/ballroom-5.jpg') }}" 
+                     alt="Ballroom Image 5" 
+                     class="w-full h-56 object-cover cursor-pointer" 
+                     onclick="openModal(this)" 
+                     loading="lazy">
+            </div>
+        
+            <div class="p-6 text-center">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Exclusive Ballroom Package</h3>
+                <p class="text-gray-600">Enjoy a premium ballroom experience with elegant decor, lighting, and catering.</p>
+            </div>
         </div>
+        
     </div>
 
     <!-- Image Modal -->
