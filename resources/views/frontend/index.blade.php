@@ -1060,35 +1060,48 @@
 
                 <!-- Contact Form -->
                 <form action="#" method="POST"
-                    class="bg-white p-6 sm:p-8 rounded-xl shadow-lg transition-transform duration-700 hover:shadow-2xl hover:-translate-y-2">
+                    class="bg-white p-6 sm:p-8 rounded-xl shadow-lg transition-transform duration-700 
+       hover:shadow-2xl hover:-translate-y-2 space-y-4">
+
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
                         <input type="text" name="name" id="name" required
-                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm 
+               focus:ring-yellow-500 focus:border-yellow-500">
                     </div>
+
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
                         <input type="email" name="email" id="email" required
-                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500">
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm 
+               focus:ring-yellow-500 focus:border-yellow-500">
                     </div>
+
                     <div>
                         <label for="phone" class="block text-sm font-medium text-gray-700">Your Mobile Number</label>
                         <input type="tel" name="phone" id="phone" required
-                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500"
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm 
+               focus:ring-yellow-500 focus:border-yellow-500"
                             placeholder="+91-7275002525">
                     </div>
+
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                         <textarea name="message" id="message" rows="4" required
-                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-500 focus:border-yellow-500"></textarea>
+                            class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm 
+               focus:ring-yellow-500 focus:border-yellow-500"></textarea>
                     </div>
+
                     <div>
                         <button type="submit"
-                            class="w-full bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white font-medium py-3 rounded-lg shadow-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            class="w-full bg-gradient-to-r from-[#8B4513] to-[#D4A017] text-white font-medium py-3 
+               rounded-lg shadow-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-yellow-500">
                             Send Message
                         </button>
                     </div>
+
                 </form>
+
             </div>
 
             <!-- Map Section -->
