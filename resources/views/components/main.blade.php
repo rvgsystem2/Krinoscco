@@ -115,7 +115,7 @@
 
             // Show/hide Back to Top button
             window.addEventListener("scroll", function() {
-                if (window.scrollY > 300) {
+                if (window.scrollY > 400) {
                     backToTop.style.display = "flex";
                 } else {
                     backToTop.style.display = "none";
