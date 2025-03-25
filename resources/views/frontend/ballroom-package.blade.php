@@ -29,11 +29,11 @@
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
                 <img src="{{ asset('asset/ballroom/ballroom-1.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/ballroom/ballroom-2.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/ballroom/ballroom-2.JPG') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/ballroom/ballroom-3.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/ballroom/ballroom-3.JPG') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
-                <img src="{{ asset('asset/ballroom/ballroom-4.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
+                <img src="{{ asset('asset/ballroom/ballroom-4.JPG') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
                 <img src="{{ asset('asset/ballroom/ballroom-5.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
                     onclick="openModal(this)">
@@ -45,6 +45,8 @@
 
             </div>
         </div>
+     
+        
     </div>
 
     <!-- Image Modal -->
