@@ -30,13 +30,13 @@
                 @for ($i = 1; $i <= 50; $i++)
                     <div
                         class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img src="{{ asset('asset/gallery/gallery-(' . $i . ').jpg') }}"
+                        <img src="{{ asset('asset/gallery/gallery-' . $i . '.jpg') }}"
                             alt="Digital Artwork {{ $i }}"
                             class="w-full h-64 object-cover rounded-lg cursor-pointer transition-all duration-300 group-hover:scale-105"
-                            onclick="openModal('{{ asset('asset/gallery/gallery-(' . $i . ').jpg') }}', 'Digital Artwork {{ $i }}', {{ $i }})"
+                            onclick="openModal('{{ asset('asset/gallery/gallery-' . $i . '.jpg') }}', 'Digital Artwork {{ $i }}', {{ $i }})"
                             loading="lazy" data-index="{{ $i }}"
-                            data-src="{{ asset('asset/gallery/gallery-(' . $i . ').jpg') }}"
-                            onerror="this.onerror=null; this.src='{{ asset('asset/gallery/gallery-(16).jpg') }}'">
+                            data-src="{{ asset('asset/gallery/gallery-' . $i . '.jpg') }}"
+                            onerror="this.onerror=null; this.src='{{ asset('asset/gallery/gallery-16.jpg') }}'">
                         <div
                             class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="text-white font-medium">Digital Artwork {{ $i }}</h3>
@@ -44,7 +44,8 @@
                     </div>
                 @endfor
             </div>
-            
+
+
         </div>
     </section>
 
