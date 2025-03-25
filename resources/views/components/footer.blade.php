@@ -173,6 +173,10 @@
         <a href="https://www.youtube.com/@hotelkrinoscco" target="_blank" class="social-icon text-white mx-4 text-2xl">
             <i class="fab fa-youtube"></i>
         </a>
+        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fkrinoscco" target="_blank"
+            class="social-icon text-white mx-4 text-2xl">
+            <i class="fab fa-twitter"></i>
+        </a>
     </div>
 
     <!-- Bottom Bar -->
