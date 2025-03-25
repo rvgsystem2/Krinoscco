@@ -191,15 +191,19 @@
         const roomInput = document.getElementById("roomCount");
         const increaseBtn = document.getElementById("increase");
         const decreaseBtn = document.getElementById("decrease");
+        const maxRooms = 60; // Maximum limit
 
         function updateButtons() {
             let value = parseInt(roomInput.value, 10);
             decreaseBtn.disabled = value <= 1;
+            increaseBtn.disabled = value >= maxRooms;
         }
 
         increaseBtn.addEventListener("click", function() {
             let value = parseInt(roomInput.value, 10);
-            roomInput.value = value + 1;
+            if (value < maxRooms) {
+                roomInput.value = value + 1;
+            }
             updateButtons();
         });
 
@@ -207,6 +211,17 @@
             let value = parseInt(roomInput.value, 10);
             if (value > 1) {
                 roomInput.value = value - 1;
+            }
+            updateButtons();
+        });
+
+        // Ensure input doesn't exceed the limit manually
+        roomInput.addEventListener("input", function() {
+            let value = parseInt(roomInput.value, 10) || 1;
+            if (value > maxRooms) {
+                roomInput.value = maxRooms;
+            } else if (value < 1) {
+                roomInput.value = 1;
             }
             updateButtons();
         });
