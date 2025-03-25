@@ -108,37 +108,37 @@
                 <h3 class="text-xl font-semibold text-white mb-6">Useful Links</h3>
                 <ul class="space-y-3">
                     <li>
-                        <a href="{{route('termandcondition')}}"
+                        <a href="{{ route('termandcondition') }}"
                             class="footer-link text-sm hover:text-white transition-colors duration-300">Terms and
                             Conditions</a>
                     </li>
                     <li>
-                        <a href="{{route('conditons')}}"
+                        <a href="{{ route('conditons') }}"
                             class="footer-link text-sm hover:text-white transition-colors duration-300">General Terms
                             and Conditions For Online-Payments</a>
                     </li>
                     <li>
-                        <a href="{{route('liability')}}"
+                        <a href="{{ route('liability') }}"
                             class="footer-link text-sm hover:text-white transition-colors duration-300">Limitation of
                             Liability</a>
                     </li>
                     <li>
-                        <a href="{{route('miscelleneous')}}"
+                        <a href="{{ route('miscelleneous') }}"
                             class="footer-link text-sm hover:text-white transition-colors duration-300">Miscellaneous
                             Conditions</a>
                     </li>
                     <li>
-                        <a href="{{route('details')}}"
+                        <a href="{{ route('details') }}"
                             class="footer-link text-sm hover:text-white transition-colors duration-300">Debit/Credit
                             Card, Bank Account Details</a>
                     </li>
                     <li>
-                        <a href="{{route('information')}}"
+                        <a href="{{ route('information') }}"
                             class="footer-link text-sm hover:text-white transition-colors duration-300">Personal
                             Information</a>
                     </li>
                     <li>
-                        <a href="{{route('policy')}}"
+                        <a href="{{ route('policy') }}"
                             class="footer-link text-sm hover:text-white transition-colors duration-300">Cancellation
                             Policy</a>
                     </li>
@@ -149,31 +149,29 @@
             <div class="space-y-4">
                 <h3 class="text-xl font-semibold text-white mb-4 sm:mb-6">Our Location</h3>
                 <div class="w-full overflow-hidden rounded-lg shadow-md">
-                    <iframe class="w-full h-[300px] sm:h-[400px] lg:h-[450px]" 
+                    <iframe class="w-full h-[300px] sm:h-[400px] lg:h-[450px]"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.786563827908!2d82.162745675435!3d26.78307267672456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0796e56fb899%3A0xffa1558e88f0d349!2sHotel%20Krinoscco!5e0!3m2!1sen!2sin!4v1739181698814!5m2!1sen!2sin"
-                        style="border:0;" allowfullscreen="" loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
     <!-- Social Media Section -->
     <div class="text-center py-6">
         <h3 class="text-lg font-semibold text-white mb-4">Follow us on</h3>
-        <a href="https://facebook.com" target="_blank" class="social-icon text-white mx-4 text-2xl">
+        <a href="https://www.facebook.com/people/Hotel-Krinoscco/pfbid0hiL26HVezzPrGJmMjJLMTFgXXtHBuvVWeguLSWsEYvm7akhtkcQHujsUDDDeMVqwl/"
+            target="_blank" class="social-icon text-white mx-4 text-2xl">
             <i class="fab fa-facebook"></i>
         </a>
-        <a href="https://instagram.com" target="_blank" class="social-icon text-white mx-4 text-2xl">
+        <a href="https://www.instagram.com/hotelkrinoscco/#" target="_blank"
+            class="social-icon text-white mx-4 text-2xl">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://twitter.com" target="_blank" class="social-icon text-white mx-4 text-2xl">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://linkedin.com" target="_blank" class="social-icon text-white mx-4 text-2xl">
-            <i class="fab fa-linkedin"></i>
+        <a href="https://www.youtube.com/@hotelkrinoscco" target="_blank" class="social-icon text-white mx-4 text-2xl">
+            <i class="fab fa-youtube"></i>
         </a>
     </div>
 
@@ -185,7 +183,8 @@
                     Copyright © 2022 Hotel Krinoscco
                 </div>
                 <div class="text-sm text-gray-400">
-                    Powered by <a href="https://realvictorygroups.com/ " class="text-blue-400 hover:text-blue-300">Real Victory Groups</a>
+                    Powered by <a href="https://realvictorygroups.com/ " class="text-blue-400 hover:text-blue-300">Real
+                        Victory Groups</a>
                 </div>
             </div>
         </div>
