@@ -50,7 +50,7 @@
                 </div>
 
                 <!-- Check-in Date Picker -->
-                <div class="flex flex-col">
+                <div class="flex flex-col w-full">
                     <label class="text-gray-700 font-medium">Check-in</label>
                     <input type="text" id="checkin" name="checkin" placeholder="Select Check-in" required
                         class="border border-gray-300 rounded-md p-2 bg-white outline-none
@@ -58,7 +58,7 @@
                 </div>
 
                 <!-- Check-out Date Picker -->
-                <div class="flex flex-col">
+                <div class="flex flex-col w-full">
                     <label class="text-gray-700 font-medium">Check-out</label>
                     <input type="text" id="checkout" name="checkout" placeholder="Select Check-out" required
                         class="border border-gray-300 rounded-md p-2 bg-white outline-none
@@ -88,8 +88,6 @@
                         <option value="2">2 Children</option>
                     </select>
                 </div>
-
-
 
                 <!-- Rooms -->
                 <div class="flex flex-col">
