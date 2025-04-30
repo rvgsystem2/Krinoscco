@@ -18,7 +18,18 @@
 
         <!-- Crescent Restaurant Section -->
         <div class="py-16 px-8 lg:px-16">
-            <h2 class="text-4xl font-semibold text-center mb-10 text-[#2c3e50]">Crescent Restaurant</h2>
+            <div class="text-center py-10">
+                <!-- Title of the Restaurant without shadow, with hover effect on text -->
+                <h2
+                    class="text-4xl font-semibold text-[#2c3e50] mb-6 transform transition-all hover:scale-105 hover:text-[#e67e22]">
+                    Crescent Restaurant
+                </h2>
+                <!-- Gradient line with smooth animation -->
+                <div
+                    class="w-32 h-1 bg-gradient-to-r from-[#e67e22] to-[#f39c12] mx-auto rounded-full transition-all duration-500 hover:w-40">
+                </div>
+            </div>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div
                     class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
@@ -50,7 +61,19 @@
 
         <!-- Tit Bit Cafe Section -->
         <div class="py-16 px-8 lg:px-16">
-            <h2 class="text-4xl font-semibold text-center mb-10 text-[#2c3e50]">Tit Bit Cafe</h2>
+            <div class="text-center py-10">
+                <!-- Title of the Restaurant without shadow, with hover effect on text -->
+                <h2
+                    class="text-4xl font-semibold text-[#2c3e50] mb-6 transform transition-all hover:scale-105 hover:text-[#e67e22]">
+                    Tit Bit Cafe
+                </h2>
+
+                <!-- Gradient line with smooth animation -->
+                <div
+                    class="w-32 h-1 bg-gradient-to-r from-[#e67e22] to-[#f39c12] mx-auto rounded-full transition-all duration-500 hover:w-40">
+                </div>
+            </div>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div
                     class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
@@ -82,7 +105,18 @@
 
         <!-- Gym Section -->
         <div class="py-16 px-8 lg:px-16">
-            <h2 class="text-4xl font-semibold text-center mb-10 text-[#2c3e50]">Gym</h2>
+            <div class="text-center py-10">
+                <!-- Title of the Restaurant without shadow, with hover effect on text -->
+                <h2
+                    class="text-4xl font-semibold text-[#2c3e50] mb-6 transform transition-all hover:scale-105 hover:text-[#e67e22]">
+                    Gym
+                </h2>
+
+                <!-- Gradient line with smooth animation -->
+                <div
+                    class="w-32 h-1 bg-gradient-to-r from-[#e67e22] to-[#f39c12] mx-auto rounded-full transition-all duration-500 hover:w-40">
+                </div>
+            </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div
                     class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
@@ -114,7 +148,18 @@
 
         <!-- Conference Room Elite 1 & Elite 2 Section -->
         <div class="py-16 px-8 lg:px-16">
-            <h2 class="text-4xl font-semibold text-center mb-10 text-[#2c3e50]">Conference Room Elite 1 & Elite 2</h2>
+            <div class="text-center py-10">
+                <!-- Title of the Restaurant without shadow, with hover effect on text -->
+                <h2
+                    class="text-4xl font-semibold text-[#2c3e50] mb-6 transform transition-all hover:scale-105 hover:text-[#e67e22]">
+                    Conference Room Elite 1 & Elite 2
+                </h2>
+
+                <!-- Gradient line with smooth animation -->
+                <div
+                    class="w-32 h-1 bg-gradient-to-r from-[#e67e22] to-[#f39c12] mx-auto rounded-full transition-all duration-500 hover:w-40">
+                </div>
+            </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div
                     class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
