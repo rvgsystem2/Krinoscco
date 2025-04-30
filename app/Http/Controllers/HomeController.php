@@ -46,6 +46,16 @@ class HomeController extends Controller
         return view('frontend.contact-us');
     }
 
+    public function crescent()
+    {
+        return view('frontend.crescent');
+    }
+
+    public function crescentfacilities()
+    {
+        return view('frontend.crescentfacilities');
+    }
+
     // Accommodation Routes
     public function standardRoom()
     {

@@ -28,8 +28,9 @@ Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
 // Contact Us route
 Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us');
 
+Route::get('/crescent', [HomeController::class, 'crescent'])->name('crescent');
 
-
+Route::get('/crescentfacilities', [HomeController::class, 'crescentfacilities'])->name('crescentfacilities');
 
 // Accommodation Routes
 Route::get('/accommodation/standard-room', [HomeController::class, 'standardRoom'])->name('accommodation.standard');
