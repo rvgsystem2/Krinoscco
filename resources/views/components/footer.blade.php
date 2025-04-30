@@ -142,6 +142,11 @@
                             class="footer-link text-sm hover:text-white transition-colors duration-300">Cancellation
                             Policy</a>
                     </li>
+                    <li>
+                        <a href="{{ route('crescent') }}"
+                            class="footer-link text-sm hover:text-white transition-colors duration-300">Crescent
+                            Facilities</a>
+                    </li>
                 </ul>
             </div>
 
