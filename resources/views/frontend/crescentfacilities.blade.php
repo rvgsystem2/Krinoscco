@@ -14,9 +14,9 @@
         </div>
     </div>
 
-    <div>
+    <div class="bg-gray-100">
         <!-- Crescent Restaurant Section -->
-        <section class="py-16 px-8 lg:px-16 bg-gray-50">
+        <section class="py-16 px-8 lg:px-16">
             <h2 class="text-4xl font-semibold text-center mb-10 text-[#2c3e50]">Crescent Restaurant</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div
@@ -48,7 +48,7 @@
         </section>
 
         <!-- Tit Bit Cafe Section -->
-        <section class="py-16 px-8 lg:px-16 bg-gray-100">
+        <section class="py-16 px-8 lg:px-16">
             <h2 class="text-4xl font-semibold text-center mb-10 text-[#2c3e50]">Tit Bit Cafe</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div
@@ -112,7 +112,7 @@
         </section>
 
         <!-- Conference Room Elite 1 & Elite 2 Section -->
-        <section class="py-16 px-8 lg:px-16 bg-gray-100">
+        <section class="py-16 px-8 lg:px-16">
             <h2 class="text-4xl font-semibold text-center mb-10 text-[#2c3e50]">Conference Room Elite 1 & Elite 2</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div
