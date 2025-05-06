@@ -84,6 +84,16 @@ class HomeController extends Controller
         return view('frontend.ballroom-package');
     }
 
+    public function elite1()
+    {
+        return view('frontend.elite1');
+    }
+
+    public function elite2()
+    {
+        return view('frontend.elite2');
+    }
+
     public function termandcondition()
     {
         return view('frontend.termandcondition');

@@ -65,7 +65,7 @@
                 <!-- Title of the Restaurant without shadow, with hover effect on text -->
                 <h2
                     class="text-4xl font-semibold text-[#2c3e50] mb-6 transform transition-all hover:scale-105 hover:text-[#e67e22]">
-                    Tit Bit Cafe
+                    Open Terrace
                 </h2>
 
                 <!-- Gradient line with smooth animation -->
@@ -80,7 +80,7 @@
                     <img src="{{ asset('asset/cafe/cafe (1).jpg') }}" alt="Tit Bit Cafe Image 1"
                         class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
                 </div>
-                <div
+                {{-- <div
                     class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
                     <img src="{{ asset('asset/cafe/cafe (2).jpg') }}" alt="Tit Bit Cafe Image 2"
                         class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
@@ -94,7 +94,7 @@
                     class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
                     <img src="{{ asset('asset/cafe/cafe (4).jpg') }}" alt="Tit Bit Cafe Image 4"
                         class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
-                </div>
+                </div> --}}
                 <div
                     class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
                     <img src="{{ asset('asset/cafe/cafe (5).jpg') }}" alt="Tit Bit Cafe Image 5"
@@ -138,11 +138,11 @@
                     <img src="{{ asset('asset/gym/gym (4).jpg') }}" alt="Gym Image 4"
                         class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
                 </div>
-                <div
+                {{-- <div
                     class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
                     <img src="{{ asset('asset/cafe/cafe (5).jpg') }}" alt="Gym Image 5"
                         class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
-                </div>
+                </div> --}}
             </div>
         </div>
 

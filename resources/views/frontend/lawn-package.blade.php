@@ -13,7 +13,7 @@
         <div class="relative container mx-auto text-center z-10">
             <!-- Title with Enhanced Focus -->
             <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">
-                Lawn Packages
+                Lawn 
             </h1>
 
             <!-- Description Text with Focus -->
@@ -30,7 +30,7 @@
     <div class="container mx-auto py-16 px-6">
         <div class="py-4">
             <h2 class="text-4xl font-bold text-center text-gray-700 mb-4">
-                Our Lawn Package
+                Our Lawn 
             </h2>
             <span class="block border-b-4 border-gray-700 w-1/6 mx-auto"></span>
         </div>

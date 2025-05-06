@@ -65,7 +65,7 @@
                     <div class="swiper luxury-slider relative">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{ asset('asset/deluxe/deluxe-1.jpg') }}" alt="Hotel Detail 1"
+                                <img src="{{ asset('asset/deluxe/deluxe-6.jpg') }}" alt="Hotel Detail 1"
                                     class="w-full h-[500px] object-cover" />
                             </div>
                             <div class="swiper-slide">
@@ -85,7 +85,7 @@
                                     class="w-full h-[500px] object-cover" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="{{ asset('asset/deluxe/deluxe-6.jpg') }}" alt="Hotel Detail 6"
+                                <img src="{{ asset('asset/deluxe/deluxe-1.jpg') }}" alt="Hotel Detail 6"
                                     class="w-full h-[500px] object-cover" />
                             </div>
                         </div>

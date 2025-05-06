@@ -182,17 +182,57 @@
                                     d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div
+                        {{-- <div
                             class="dropdown-menu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-[#0D0630] ring-1 ring-black ring-opacity-5 z-50">
                             <div class="py-1">
                                 <a href="{{ route('banquets.lawn') }}"
                                     class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Lawn
-                                    Package</a>
+                                    </a>
                                 <a href="{{ route('banquets.ballroom') }}"
                                     class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Ballroom
-                                    Package​</a>
+                                    </a>
+                            </div>
+                        </div> --}}
+                        <div class="relative group">
+                            {{-- <button
+                                class="text-white px-4 py-2 text-sm hover:text-purple-300 focus:outline-none focus:text-purple-300">
+                                Banquets
+                            </button> --}}
+                            <div
+                                class="dropdown-menu absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-[#0D0630] ring-1 ring-black ring-opacity-5 z-50 hidden group-hover:block md:block">
+                                <div class="py-1">
+                                    <a href="{{ route('banquets.lawn') }}"
+                                        class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Lawn</a>
+                                    <a href="{{ route('banquets.ballroom') }}"
+                                        class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Ballroom</a>
+
+                                  <!-- Submenu: Conference Room -->
+<div class="relative group">
+    <!-- Trigger button (always visible on desktop) -->
+    <button
+        class="w-full text-left px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white flex justify-between items-center">
+        Conference Hall
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7" />
+        </svg>
+    </button>
+
+    <!-- Dropdown (visible on hover for desktop) -->
+    <div
+        class="absolute top-0 left-full mt-0 ml-1 w-48 rounded-md shadow-lg bg-[#0D0630] ring-1 ring-black ring-opacity-5 z-50 hidden group-hover:block group-focus-within:block">
+        <a href="{{route('banquets.elite1')}}"
+            class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Elite 1</a>
+        <a href="{{route('banquets.elite2')}}"
+            class="block px-4 py-2 text-sm text-gray-300 hover:bg-purple-600/20 hover:text-white">Elite 2</a>
+    </div>
+</div>
+
+
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                     <a href="{{ route('rules-and-regulations') }}"
@@ -256,18 +296,20 @@
                             class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Deluxe
                             Room</a>
                         <a href="{{ route('accommodation.suite') }}"
-                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Suite Room</a>
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Suite
+                            Room</a>
                     </div>
                 </div>
 
                 <!-- Mobile Banquets submenu -->
-                <div class="space-y-1">
+                {{-- <div class="space-y-1">
                     <button
                         class="w-full text-left text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5 flex justify-between items-center"
                         onclick="toggleSubmenu('banquets-submenu')">
                         Banquets And Meetings
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div id="banquets-submenu" class="hidden pl-4">
@@ -278,7 +320,52 @@
                             class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Ballroom
                             Package</a>
                     </div>
+                </div> --}}
+
+                <div class="space-y-1">
+                    <!-- Banquets And Meetings -->
+                    <button
+                        class="w-full text-left text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5 flex justify-between items-center"
+                        onclick="toggleSubmenu('banquets-submenu')">
+                        Banquets And Meetings
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="banquets-submenu" class="hidden pl-4">
+                        <a href="{{ route('banquets.lawn') }}"
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">
+                            Lawn Package
+                        </a>
+                        <a href="{{ route('banquets.ballroom') }}"
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">
+                            Ballroom Package
+                        </a>
+                    </div>
+                
+                    <!-- Conference Room -->
+                    <button
+                        class="w-full text-left text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5 flex justify-between items-center"
+                        onclick="toggleSubmenu('conference-submenu')">
+                        Conference Room
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="conference-submenu" class="hidden pl-4">
+                        <a href="{{route('banquets.elite1')}}"
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">
+                            Elite 1
+                        </a>
+                        <a href="{{route('banquets.elite2')}}"
+                            class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">
+                            Elite 2
+                        </a>
+                    </div>
                 </div>
+                
 
                 <a href="{{ route('rules-and-regulations') }}"
                     class="block text-gray-300 hover:text-white px-3 py-2 text-base font-medium hover:bg-white/5">Rules

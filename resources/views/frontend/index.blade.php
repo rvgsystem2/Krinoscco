@@ -737,7 +737,7 @@
                         class="w-full h-[300px] object-cover hover:scale-110 transition-transform duration-1000">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-4">
-                        <h3 class="text-white text-lg md:text-xl font-semibold uppercase tracking-wide">Tit Bit Café</h3>
+                        <h3 class="text-white text-lg md:text-xl font-semibold uppercase tracking-wide">Open Terrace</h3>
                     </div>
                 </div>
 

@@ -7,7 +7,7 @@
         <div class="absolute inset-0 bg-white bg-opacity-20 backdrop-blur-md z-0"></div>
         <div class="relative container mx-auto text-center z-10">
             <h1 class="text-5xl font-extrabold uppercase leading-tight mb-4 text-[#ecf0f1] drop-shadow-lg">
-                Ballroom 
+                Conference Hall - Elite 2
             </h1>
             <p class="text-lg font-medium mb-6 text-[#bdc3c7] opacity-90 tracking-wide max-w-xl mx-auto">
                 We’d love to hear from you! Reach out to us anytime.
@@ -17,38 +17,58 @@
     </div>
 
     <!-- Packages Section -->
-    <div class="container mx-auto py-16 px-6">
-        <div class="py-4">
-            <h2 class="text-4xl font-bold text-center text-gray-700 mb-4">
-                Our Ballroom 
+    <div class="py-16 px-8 lg:px-16">
+        <div class="text-center py-10">
+            <!-- Title of the Restaurant without shadow, with hover effect on text -->
+            <h2
+                class="text-4xl font-semibold text-[#2c3e50] mb-6 transform transition-all hover:scale-105 hover:text-[#e67e22]">
+                Conference Hall Elite 2
+                
             </h2>
-            <span class="block border-b-4 border-gray-700 w-1/6 mx-auto"></span>
-        </div>
 
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-                <img src="{{ asset('asset/ballroom/ballroom-1.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
-                    onclick="openModal(this)">
-                <img src="{{ asset('asset/ballroom/ballroom-2.JPG') }}" class="w-full h-56 object-cover cursor-pointer"
-                    onclick="openModal(this)">
-                <img src="{{ asset('asset/ballroom/ballroom-3.JPG') }}" class="w-full h-56 object-cover cursor-pointer"
-                    onclick="openModal(this)">
-                <img src="{{ asset('asset/ballroom/ballroom-4.JPG') }}" class="w-full h-56 object-cover cursor-pointer"
-                    onclick="openModal(this)">
-                <img src="{{ asset('asset/ballroom/ballroom-5.jpg') }}" class="w-full h-56 object-cover cursor-pointer"
-                    onclick="openModal(this)">
-            </div>
-
-            <div class="p-6 text-center">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Exclusive Ballroom Package</h3>
-                <p class="text-gray-600">Enjoy a premium ballroom experience with elegant decor, lighting, and catering.</p>
-
+            <!-- Gradient line with smooth animation -->
+            <div
+                class="w-32 h-1 bg-gradient-to-r from-[#e67e22] to-[#f39c12] mx-auto rounded-full transition-all duration-500 hover:w-40">
             </div>
         </div>
-     
-        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {{-- <div
+                class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
+                <img src="{{ asset('asset/confrence-hall/hall (1).jpg') }}" alt="Conference Room Image 1"
+                    class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
+            </div>
+            <div
+                class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
+                <img src="{{ asset('asset/confrence-hall/hall (2).jpg') }}" alt="Conference Room Image 2"
+                    class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
+            </div>
+            <div
+                class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
+                <img src="{{ asset('asset/confrence-hall/hall (3).jpg') }}" alt="Conference Room Image 3"
+                    class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
+            </div>
+            <div
+                class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
+                <img src="{{ asset('asset/confrence-hall/hall (4).jpg') }}" alt="Conference Room Image 4"
+                    class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
+            </div> --}}
+            <div
+                class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
+                <img src="{{ asset('asset/confrence-hall/hall (5).jpg') }}" alt="Conference Room Image 5"
+                    class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
+            </div>
+            <div
+                class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
+                <img src="{{ asset('asset/confrence-hall/hall (6).jpg') }}" alt="Conference Room Image 6"
+                    class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
+            </div>
+            <div
+                class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
+                <img src="{{ asset('asset/confrence-hall/hall (7).jpg') }}" alt="Conference Room Image 7"
+                    class="w-full h-[250px] object-cover hover:scale-110 transition-transform duration-1000">
+            </div>
+        </div>
     </div>
-
     <!-- Image Modal -->
     <div id="imageModal" class="fixed inset-0 flex items-center justify-center hidden bg-black bg-opacity-75 z-50">
         <div class="relative">
